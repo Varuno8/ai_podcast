@@ -16,7 +16,8 @@ class TTSConverter:
         # Default voice embeddings or IDs (will be replaced by clones)
         self.voices = {
             "male": "228fca29-3a0a-435c-8728-5cb483251068", # Kiefer (Sonic 3)
-            "female": "f786b574-daa5-4673-aa0c-cbe3e8534c02" # Katie (Sonic 3)
+            "female": "f786b574-daa5-4673-aa0c-cbe3e8534c02", # Katie (Sonic 3)
+            "guest": "6926713b-d0c5-4a6d-867f-033857403eac"  # Baritono (Sonic 3) - using a distinct voice
         }
         
     def convert(self, script: str, output_dir: str = "audio_segments") -> list:
@@ -94,6 +95,8 @@ class TTSConverter:
                 segments.append(("male", line.replace("Host 1:", "").strip()))
             elif line.startswith("Host 2:"):
                 segments.append(("female", line.replace("Host 2:", "").strip()))
+            elif line.startswith("Guest:"):
+                segments.append(("guest", line.replace("Guest:", "").strip()))
         return segments
 
     def _generate_and_save_speech(self, text: str, voice_id: str, output_file: str):
