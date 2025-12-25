@@ -1,0 +1,1946 @@
+<html lang="en" class=""><head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+
+        
+        
+  <link rel="stylesheet" href="/static/assets/base_style-CPPDhfna.css">
+<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-DP2X732JSX&amp;l=pingerDataLayer&amp;cx=c&amp;gtm=4e5ca1"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PC9B6M3&amp;l=pingerDataLayer" id="pingerInjectedGTM"></script><script type="module" crossorigin="" src="/static/assets/base_style-BepKMsUl.js"></script>
+
+  <link rel="stylesheet" href="/static/assets/article_style-DUfI1jZp.css">
+<link rel="stylesheet" href="/static/assets/style-BOrsu84o.css">
+<script type="module" crossorigin="" src="/static/assets/article_style-D3wJHomh.js"></script>
+
+  
+  
+    <style>
+  
+  
+  @media screen and (min-width: 64em) {
+    div.pmc-wm {
+      background: repeat-y;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='350' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cfilter x='-.02' y='0' width='1.05' height='1' id='c'%3E%3CfeFlood flood-color='%23FFF'/%3E%3CfeComposite in='SourceGraphic'/%3E%3C/filter%3E%3Ctext id='b' font-family='Helvetica' font-size='11pt' style='opacity:1;fill:%23005ea2;stroke:none;text-anchor:middle' x='175' y='14'%3E%3C/text%3E%3Cpath id='a' style='fill:%23005ea2' d='M0 8h350v3H0z'/%3E%3C/defs%3E%3Cuse xlink:href='%23a' transform='rotate(90 10 10)'/%3E%3Cuse xlink:href='%23b' transform='rotate(90 10 10)' filter='url(%23c)'/%3E%3C/svg%3E");
+      padding-left: 3rem;
+    }
+  }
+</style>
+
+  
+
+
+
+        
+            <link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicons/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="48x48" href="/static/img/favicons/favicon-48x48.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicons/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicons/favicon-16x16.png">
+            <link rel="manifest" href="/static/img/favicons/site.webmanifest">
+            <link rel="mask-icon" href="/static/img/favicons/safari-pinned-tab.svg" color="#0071bc">
+            <meta name="msapplication-config" content="/static/img/favicons/browserconfig.xml">
+            <meta name="theme-color" content="#ffffff">
+        
+
+        <title>
+            “Air pollution in Delhi: Its Magnitude and Effects on Health” - PMC
+        </title>
+
+        
+        
+  
+  <!-- Logging params: Pinger defaults -->
+<meta name="ncbi_app" content="cloudpmc-viewer">
+<meta name="ncbi_db" content="pmc">
+<meta name="ncbi_phid" content="DD9F434194D37BC30F4341007DBF01CB.m_1">
+<meta name="ncbi_pinger_stat_url" content="https://pmc.ncbi.nlm.nih.gov/stat">
+<!-- Logging params: Pinger custom -->
+<meta name="ncbi_pdid" content="article">
+  
+    <link rel="preconnect" href="https://www.google-analytics.com">
+
+    
+        <link rel="preconnect" href="https://cdn.ncbi.nlm.nih.gov">
+    
+
+    <!-- Include USWDS Init Script -->
+    <script src="/static/assets/uswds-init.js"></script>
+
+
+    <meta name="ncbi_domain" content="ijcommed">
+<meta name="ncbi_type" content="fulltext">
+<meta name="ncbi_pcid" content="journal">
+<link rel="canonical" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3612296/">
+<meta name="robots" content="INDEX,NOFOLLOW,NOARCHIVE">
+<meta name="citation_journal_title" content="Indian Journal of Community Medicine : Official Publication of Indian Association of Preventive &amp; Social Medicine">
+<meta name="citation_title" content="“Air pollution in Delhi: Its Magnitude and Effects on Health”">
+<meta name="citation_author" content="SA Rizwan">
+<meta name="citation_author_institution" content="Centre for Community Medicine, All India Institute of Medical Sciences, New Delhi, India">
+<meta name="citation_author" content="Baridalyne Nongkynrih">
+<meta name="citation_author_institution" content="Centre for Community Medicine, All India Institute of Medical Sciences, New Delhi, India">
+<meta name="citation_author" content="Sanjeev Kumar Gupta">
+<meta name="citation_author_institution" content="Centre for Community Medicine, All India Institute of Medical Sciences, New Delhi, India">
+<meta name="citation_publication_date" content="2013 Jan-Mar">
+<meta name="citation_volume" content="38">
+<meta name="citation_issue" content="1">
+<meta name="citation_firstpage" content="4">
+<meta name="citation_doi" content="10.4103/0970-0218.106617">
+<meta name="citation_pmid" content="23559696">
+<meta name="citation_abstract_html_url" content="https://pmc.ncbi.nlm.nih.gov/articles/PMC3612296/">
+<meta name="citation_fulltext_html_url" content="https://pmc.ncbi.nlm.nih.gov/articles/PMC3612296/">
+<meta name="citation_pdf_url" content="https://pmc.ncbi.nlm.nih.gov/articles/PMC3612296/pdf/IJCM-38-4.pdf">
+<meta name="description" content="Air pollution is responsible for many health problems in the urban areas. Of late, the air pollution status in Delhi has undergone many changes in terms of the levels of pollutants and the control measures taken to reduce them. This paper provides ...">
+<meta name="og:title" content="“Air pollution in Delhi: Its Magnitude and Effects on Health”">
+<meta name="og:type" content="article">
+<meta name="og:site_name" content="PubMed Central (PMC)">
+<meta name="og:description" content="Air pollution is responsible for many health problems in the urban areas. Of late, the air pollution status in Delhi has undergone many changes in terms of the levels of pollutants and the control measures taken to reduce them. This paper provides ...">
+<meta name="og:url" content="https://pmc.ncbi.nlm.nih.gov/articles/PMC3612296/">
+<meta name="og:image" content="https://cdn.ncbi.nlm.nih.gov/pmc/cms/images/pmc-card-share.jpg?_=0">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@ncbi">
+    
+    
+
+    <style>.ncbi-alerts {width: 100%;}.ncbi-alerts .ncbi-alert__shutdown-outer { position: relative; background-color: #f4e3db; border-left: 8px solid #d54309;  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='126' height='126' viewBox='0 0 126 126'%3E%3Cpath fill='%231B1B1B' d='M117.18,31.592 C111.585,22.006 103.995,14.416 94.409,8.821 C84.821,3.226 74.354,0.429 63.001,0.429 C51.649,0.429 41.18,3.226 31.593,8.821 C22.006,14.415 14.416,22.005 8.821,31.592 C3.225,41.179 0.428,51.649 0.428,63 C0.428,74.351 3.226,84.82 8.82,94.408 C14.415,103.992 22.005,111.584 31.592,117.179 C41.179,122.774 51.648,125.571 63,125.571 C74.352,125.571 84.822,122.774 94.408,117.179 C103.994,111.585 111.584,103.994 117.179,94.408 C122.773,84.82 125.57,74.35 125.57,63 C125.57,51.649 122.773,41.178 117.18,31.592 Z M73.43,102.025 C73.43,102.786 73.184,103.423 72.696,103.939 C72.208,104.455 71.61,104.712 70.903,104.712 L55.26,104.712 C54.554,104.712 53.929,104.441 53.386,103.898 C52.843,103.355 52.572,102.73 52.572,102.025 L52.572,86.546 C52.572,85.84 52.843,85.215 53.386,84.672 C53.929,84.129 54.554,83.858 55.26,83.858 L70.903,83.858 C71.61,83.858 72.209,84.116 72.696,84.631 C73.184,85.149 73.43,85.785 73.43,86.546 L73.43,102.025 Z M73.266,73.999 C73.211,74.542 72.927,75.018 72.412,75.425 C71.895,75.832 71.258,76.035 70.498,76.035 L55.425,76.035 C54.664,76.035 54.012,75.832 53.469,75.425 C52.926,75.018 52.654,74.542 52.654,73.999 L51.269,23.404 C51.269,22.751 51.54,22.263 52.083,21.937 C52.627,21.503 53.279,21.285 54.039,21.285 L71.965,21.285 C72.726,21.285 73.377,21.502 73.92,21.937 C74.463,22.263 74.733,22.752 74.733,23.404 L73.266,73.999 Z'/%3E%3C/svg%3E%0A");}.ncbi-alerts .ncbi-alert__info-outer { position: relative; background-color: #e7f6f8; border-left: 8px solid #00bde3; background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='126' height='126' viewBox='0 0 126 126'%3E%3Cpath fill='%231B1B1B' d='M117.18,31.592 C111.585,22.006 103.995,14.416 94.409,8.821 C84.821,3.226 74.354,0.429 63.001,0.429 C51.649,0.429 41.179,3.226 31.593,8.821 C22.006,14.415 14.416,22.005 8.821,31.592 C3.225,41.179 0.428,51.649 0.428,63 C0.428,74.352 3.226,84.82 8.82,94.408 C14.415,103.993 22.005,111.584 31.592,117.179 C41.179,122.774 51.648,125.571 63,125.571 C74.352,125.571 84.822,122.774 94.408,117.179 C103.994,111.585 111.584,103.994 117.179,94.408 C122.773,84.821 125.57,74.351 125.57,63 C125.57,51.648 122.773,41.178 117.18,31.592 Z M52.572,16.071 C52.572,15.31 52.816,14.686 53.305,14.197 C53.794,13.709 54.419,13.464 55.179,13.464 L70.823,13.464 C71.583,13.464 72.208,13.709 72.695,14.197 C73.183,14.686 73.429,15.31 73.429,16.071 L73.429,29.107 C73.429,29.867 73.183,30.492 72.695,30.98 C72.208,31.469 71.583,31.713 70.823,31.713 L55.179,31.713 C54.419,31.713 53.794,31.469 53.305,30.98 C52.816,30.492 52.572,29.867 52.572,29.107 L52.572,16.071 Z M83.857,102.107 C83.857,102.867 83.611,103.492 83.124,103.979 C82.637,104.468 82.012,104.712 81.25,104.712 L44.75,104.712 C43.989,104.712 43.365,104.468 42.876,103.979 C42.387,103.491 42.143,102.866 42.143,102.106 L42.143,89.07 C42.143,88.308 42.387,87.685 42.876,87.196 C43.365,86.708 43.99,86.463 44.75,86.463 L52.572,86.463 L52.572,60.392 L44.75,60.392 C43.989,60.392 43.365,60.148 42.876,59.659 C42.387,59.171 42.143,58.546 42.143,57.785 L42.143,44.75 C42.143,43.989 42.387,43.365 42.876,42.876 C43.365,42.387 43.99,42.143 44.75,42.143 L70.823,42.143 C71.583,42.143 72.208,42.387 72.695,42.876 C73.183,43.365 73.429,43.989 73.429,44.75 L73.429,86.464 L81.249,86.464 C82.01,86.464 82.635,86.709 83.123,87.197 C83.61,87.685 83.856,88.31 83.856,89.071 L83.856,102.107 L83.857,102.107 Z'/%3E%3C/svg%3E");}.ncbi-alerts div[class$="-outer"]{background-position: 28px 20px;  background-size: 32px 32px;  background-repeat: no-repeat;padding:20px 20px 20px 28px;}.ncbi-alerts div[class$="-inner"]{padding-left: 52px; padding-right: 52px;}@media (max-width: 639px){.ncbi-alerts div[class$="outer"]{background-position: 29px 20px;}.ncbi-alerts div[class$="-inner"]{padding-left: 0px; padding-right: 0px; padding-top: 0px;}}.ncbi-alerts button.close{cursor: pointer;position:absolute; top: 10px; right: 20px; width: 36px; height: 32px; border:0; background-color: transparent; background-image: url("data:image/svg+xml,%3Csvg version='1.2' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' overflow='visible' preserveAspectRatio='none' viewBox='0 0 24 24' width='32' height='32'%3E%3Cg%3E%3Cpath xmlns:default='http://www.w3.org/2000/svg' id='window-close' d='M14.9,16.42c-0.13,0.13-0.33,0.14-0.47,0.01c0,0-0.01-0.01-0.01-0.01L12,14l-2.43,2.42 c-0.13,0.13-0.33,0.14-0.47,0.01c0,0-0.01-0.01-0.01-0.01L7.58,14.9c-0.13-0.13-0.14-0.33-0.01-0.47c0,0,0.01-0.01,0.01-0.01L10,12 L7.58,9.57C7.45,9.45,7.44,9.24,7.57,9.1c0,0,0.01-0.01,0.01-0.01L9.1,7.58c0.13-0.13,0.33-0.14,0.47-0.01c0,0,0.01,0.01,0.01,0.01 L12,10l2.43-2.43c0.13-0.13,0.33-0.14,0.47-0.01c0,0,0.01,0.01,0.01,0.01l1.51,1.53c0.13,0.13,0.14,0.33,0.01,0.47 c0,0-0.01,0.01-0.01,0.01L14,12l2.43,2.43c0.13,0.13,0.14,0.33,0.01,0.47c0,0-0.01,0.01-0.01,0.01L14.9,16.42L14.9,16.42z M20.84,4.49C20.53,4.17,20.1,3.99,19.66,4H4.34C3.42,4,2.67,4.75,2.67,5.67l0,0v12.66c0,0.92,0.75,1.67,1.67,1.67l0,0h15.32 c0.92,0,1.67-0.75,1.67-1.67l0,0V5.67C21.34,5.23,21.16,4.8,20.84,4.49z' style='fill: rgb(33, 33, 33);' vector-effect='non-scaling-stroke'/%3E%3C/g%3E%3C/svg%3E");background-size: 32px 32px; background-repeat:no-repeat;background-position:center center}.ncbi-alerts button.close:focus{ outline: 1px dotted #000000;}@media (max-width: 639px){.ncbi-alerts button.close{right: 0px;}}.ncbi-alerts p{margin-bottom: 0px; margin-top: 0px; font-size: 18px; line-height: 28px;}.ncbi-alerts .list-items > p{font-size: 0.94em; display: inline;}.ncbi-alerts .list-items > p a {font-weight: 700;}.ncbi-alerts .list-items > p:not(:last-child)::after{margin:0 8px;content:'|'}@media (min-width: 768px) and (max-width: 991px){.ncbi-alerts .list-items > p:nth-child(2)::after{content:'\a'!important;white-space: pre;}}@media(max-width: 767px){.ncbi-alerts .list-items > p{display:block;}.ncbi-alerts .list-items > p::after{content:''!important;}}.ncbi-alerts h3 {margin: 2px 0 1rem 0; padding: 0 52px; color: #000; font-size: 20px; font-weight: 700; line-height: 1.3;}@media (max-width: 639px){.ncbi-alerts h3 {padding-left: 42px;}}</style><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-CSLL4ZEK4L"></script></head>
+    <body>
+        
+    <a class="usa-skipnav " href="#main-content">
+      Skip to main content
+    </a>
+
+
+        
+            
+
+<section class="usa-banner " aria-label="Official website of the United States government">
+    <div class="usa-accordion">
+        <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+                <div class="grid-col-auto">
+                    <img aria-hidden="true" class="usa-banner__header-flag" src="/static/img/us_flag.svg" alt="">
+                </div>
+
+                <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+                    <p class="usa-banner__header-text">
+                        An official website of the United States government
+                    </p>
+                    <span class="usa-banner__header-action">Here's how you know</span>
+                </div>
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button type="button" class="usa-accordion__button usa-banner__button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           
+           " aria-expanded="false" aria-controls="gov-banner-default" data-testid="storybook-django-banner">
+    
+        
+
+        
+                    <span class="usa-banner__button-text">Here's how you know</span>
+                
+
+        
+    
+        
+            </button>
+        
+
+
+            </div>
+        </header>
+
+        <div class="usa-banner__content usa-accordion__content" id="gov-banner-default" hidden="">
+            <div class="grid-row grid-gap-lg">
+                <div class="usa-banner__guidance tablet:grid-col-6">
+                    <img class="usa-banner__icon usa-media-block__img" src="/static/img/icon-dot-gov.svg" alt="" aria-hidden="true">
+                    <div class="usa-media-block__body">
+                        <p>
+                            <strong>Official websites use .gov</strong>
+                            <br>
+                            A
+                            <strong>.gov</strong> website belongs to an official
+                            government organization in the United States.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="usa-banner__guidance tablet:grid-col-6">
+                    <img class="usa-banner__icon usa-media-block__img" src="/static/img/icon-https.svg" alt="" aria-hidden="true">
+
+                    <div class="usa-media-block__body">
+                        <p>
+                            <strong>Secure .gov websites use HTTPS</strong>
+                            <br>
+                            A <strong>lock</strong> (
+                            <span class="icon-lock">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" class="usa-banner__lock-image" role="graphics-symbol" aria-labelledby="banner-lock-description" focusable="false">
+                                    <title id="banner-lock-title">Lock</title>
+                                    <desc id="banner-lock-description">
+                                    Locked padlock icon
+                                    </desc>
+                                    <path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"></path>
+                                </svg>
+</span>) or <strong>https://</strong> means you've safely
+                                connected to the .gov website. Share sensitive
+                                information only on official, secure websites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        
+
+        
+    
+    
+    
+
+<div class="usa-overlay">
+</div>
+
+
+
+<header class="usa-header usa-header--extended usa-header--wide" data-header="" data-testid="header">
+    <div class="ncbi-header">
+        <div class="ncbi-header__container">
+            <a class="ncbi-header__logo-container" href="https://www.ncbi.nlm.nih.gov/">
+                <img alt="NCBI home page" class="ncbi-header__logo-image" src="/static/img/ncbi-logos/nih-nlm-ncbi--white.svg" width="410" height="100">
+            </a>
+
+            <!-- Mobile menu hamburger button -->
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button type="button" class="usa-menu-btn ncbi-header__hamburger-button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           
+           " aria-label="Show menu" data-testid="navMenuButton">
+    
+        
+
+        
+                <svg aria-hidden="true" class="ncbi-hamburger-icon" fill="none" focusable="false" height="21" viewBox="0 0 31 21" width="31" xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd" d="M0.125 20.75H30.875V17.3333H0.125V20.75ZM0.125 12.2083H30.875V8.79167H0.125V12.2083ZM0.125 0.25V3.66667H30.875V0.25H0.125Z" fill="#F1F1F1" fill-rule="evenodd"></path>
+                </svg>
+            
+
+        
+    
+        
+            </button>
+        
+
+
+
+            
+                <!-- Desktop buttons-->
+                <div class="ncbi-header__desktop-buttons">
+                    
+                        <!-- Desktop search button -->
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button type="button" class="usa-button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           usa-button--unstyled ncbi-header__desktop-button
+           " aria-expanded="false" aria-controls="search-field-desktop-navigation" aria-label="Show search overlay" data-testid="toggleSearchPanelButton" data-toggle-search-panel-button="" data-ga-category="header" data-ga-action="NCBI" data-ga-label="header_search_open">
+    
+        
+
+        
+                            
+
+
+
+    <svg class="usa-icon " role="graphics-symbol" aria-hidden="true">
+        
+        <use xlink:href="/static/img/sprite.svg#search"></use>
+    </svg>
+
+
+                            Search
+                        
+
+        
+    
+        
+            </button>
+        
+
+
+                    
+
+                    <!-- Desktop login dropdown -->
+                    
+                        <div class="ncbi-header__login-dropdown">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button type="button" class="usa-button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           usa-button--unstyled ncbi-header__desktop-button ncbi-header__login-dropdown-button
+           " aria-expanded="false" aria-controls="login-dropdown-menu" aria-label="Show login menu" data-testid="toggleLoginMenuDropdown" data-desktop-login-button="">
+    
+        
+
+        
+                                
+
+
+
+    <svg class="usa-icon " role="graphics-symbol" aria-hidden="true">
+        
+        <use xlink:href="/static/img/sprite.svg#person"></use>
+    </svg>
+
+
+
+                                <span data-login-dropdown-text="">Log in</span>
+
+                                <!-- Dropdown icon pointing up -->
+                                
+
+
+
+    <svg class="usa-icon ncbi-header__login-dropdown-icon ncbi-header__login-dropdown-icon--expand-less ncbi-header__login-dropdown-icon--hidden" role="graphics-symbol" aria-hidden="true" data-login-dropdown-up-arrow="">
+        
+        <use xlink:href="/static/img/sprite.svg#expand_less"></use>
+    </svg>
+
+
+
+                                <!-- Dropdown icon pointing down -->
+                                
+
+
+
+    <svg class="usa-icon ncbi-header__login-dropdown-icon ncbi-header__login-dropdown-icon--expand-more ncbi-header__login-dropdown-icon--hidden" role="graphics-symbol" aria-hidden="true" data-login-dropdown-down-arrow="">
+        
+        <use xlink:href="/static/img/sprite.svg#expand_more"></use>
+    </svg>
+
+
+                            
+
+        
+    
+        
+            </button>
+        
+
+
+
+                            <!-- Login dropdown menu -->
+                            <ul class="usa-nav__submenu ncbi-header__login-dropdown-menu" id="login-dropdown-menu" data-desktop-login-menu-dropdown="" hidden="">
+                                
+                                    <li class="usa-nav__submenu-item">
+                                        <!-- Uses custom style overrides to render external and document links. -->
+                                        
+
+
+
+
+
+
+
+
+
+    <a href="https://www.ncbi.nlm.nih.gov/myncbi/" class="usa-link  ">
+        
+
+        
+            Dashboard
+        
+
+        
+    </a>
+
+
+                                    </li>
+                                
+                                    <li class="usa-nav__submenu-item">
+                                        <!-- Uses custom style overrides to render external and document links. -->
+                                        
+
+
+
+
+
+
+
+
+
+    <a href="https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/" class="usa-link  ">
+        
+
+        
+            Publications
+        
+
+        
+    </a>
+
+
+                                    </li>
+                                
+                                    <li class="usa-nav__submenu-item">
+                                        <!-- Uses custom style overrides to render external and document links. -->
+                                        
+
+
+
+
+
+
+
+
+
+    <a href="https://www.ncbi.nlm.nih.gov/account/settings/" class="usa-link  ">
+        
+
+        
+            Account settings
+        
+
+        
+    </a>
+
+
+                                    </li>
+                                
+                                <li class="usa-nav__submenu-item">
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button type="button" class="usa-button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           usa-button--outline ncbi-header__login-dropdown-logout-button
+           " data-testid="desktopLogoutButton" data-desktop-logout-button="">
+    
+        
+
+        Log out
+
+        
+    
+        
+            </button>
+        
+
+
+                                </li>
+                            </ul>
+                        </div>
+                    
+                </div>
+            
+        </div>
+    </div>
+
+    <!-- Search panel -->
+    
+        <div class="ncbi-search-panel ncbi--show-only-at-desktop" data-header-search-panel="" hidden="">
+            <div class="ncbi-search-panel__container">
+                <form action="https://www.ncbi.nlm.nih.gov/search/all/" autocomplete="off" class="usa-search usa-search--big ncbi-search-panel__form" data-testid="desktop-navigation-search-form" method="GET" role="search">
+                    <label class="usa-sr-only" for="search-field-desktop-navigation">
+                        Search…
+                    </label>
+                    <input class="usa-input" id="search-field-desktop-navigation" name="term" placeholder="Search NCBI" type="search" value="">
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button type="submit" class="usa-button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           
+           " data-ga-category="header" data-ga-action="NCBI" data-ga-label="header_search_button">
+    
+        
+
+        
+                        <span class="usa-search__submit-text">
+                            Search NCBI
+                        </span>
+                    
+
+        
+    
+        
+            </button>
+        
+
+
+                </form>
+
+                
+            </div>
+        </div>
+    
+
+    <nav aria-label="Primary navigation" class="usa-nav">
+        <p class="usa-sr-only" id="primary-navigation-sr-only-title">
+            Primary site navigation
+        </p>
+
+        <!-- Mobile menu close button -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button type="button" class="usa-nav__close ncbi-nav__close-button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           
+           " aria-label="Close navigation menu" data-testid="navCloseButton">
+    
+        
+
+        
+            <img src="/static/img/usa-icons/close.svg" alt="Close">
+        
+
+        
+    
+        
+            </button>
+        
+
+
+
+        
+            <!-- Mobile search component -->
+            <form class="usa-search usa-search--small ncbi--hide-at-desktop margin-top-6" action="https://www.ncbi.nlm.nih.gov/search/all/" autocomplete="off" data-testid="mobile-navigation-search-form" method="GET" role="search">
+                <label class="usa-sr-only" for="search-field-mobile-navigation">
+                    Search
+                </label>
+
+                <input class="usa-input" id="search-field-mobile-navigation" type="search" placeholder="Search NCBI" name="term">
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button type="submit" class="usa-button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           
+           " data-ga-category="header" data-ga-action="NCBI" data-ga-label="header_search_button">
+    
+        
+
+        
+                    <!-- This SVG should be kept inline and not replaced with a link to the icon as otherwise it will render in the wrong color -->
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE1LjUgMTRoLS43OWwtLjI4LS4yN0E2LjQ3MSA2LjQ3MSAwIDAgMCAxNiA5LjUgNi41IDYuNSAwIDEgMCA5LjUgMTZjMS42MSAwIDMuMDktLjU5IDQuMjMtMS41N2wuMjcuMjh2Ljc5bDUgNC45OUwyMC40OSAxOWwtNC45OS01em0tNiAwQzcuMDEgMTQgNSAxMS45OSA1IDkuNVM3LjAxIDUgOS41IDUgMTQgNy4wMSAxNCA5LjUgMTEuOTkgMTQgOS41IDE0eiIvPjwvc3ZnPg==" class="usa-search__submit-icon" alt="Search">
+                
+
+        
+    
+        
+            </button>
+        
+
+
+            </form>
+
+            
+        
+
+        <!-- Primary navigation menu items -->
+        <!-- This usa-nav__inner wrapper is required to correctly style the navigation items on Desktop -->
+        
+
+        
+            <div class="ncbi-nav__mobile-login-menu ncbi--hide-at-desktop" data-mobile-login-menu="" hidden="">
+                <p class="ncbi-nav__mobile-login-menu-status">
+                    Logged in as:
+                    <strong class="ncbi-nav__mobile-login-menu-email" data-mobile-login-email-text=""></strong>
+                </p>
+                <ul class="usa-nav__primary usa-accordion">
+                    
+                        <li class="usa-nav__primary-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.ncbi.nlm.nih.gov/myncbi/" class="usa-link  ">
+        
+
+        
+            Dashboard
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                        <li class="usa-nav__primary-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/" class="usa-link  ">
+        
+
+        
+            Publications
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                        <li class="usa-nav__primary-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.ncbi.nlm.nih.gov/account/settings/" class="usa-link  ">
+        
+
+        
+            Account settings
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                </ul>
+            </div>
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button type="button" class="usa-button ncbi-nav__mobile-login-button ncbi--hide-at-desktop" data-testid="mobileLoginButton" data-mobile-login-button="">Log in</button>
+        
+
+
+    </nav>
+</header>
+
+    
+    
+        
+
+<section class="pmc-header pmc-header--basic" aria-label="PMC Header with search box">
+    <div class="pmc-nav-container">
+        <div class="pmc-header__bar">
+           <div class="pmc-header__logo">
+               <a href="/" title="Home" aria-label="PMC Home"></a>
+           </div>
+            <button type="button" class="usa-button usa-button--unstyled pmc-header__search__button" aria-label="Open search" data-ga-category="search" data-ga-action="PMC" data-ga-label="pmc_search_panel_mobile">
+                <svg class="usa-icon width-4 height-4 pmc-icon__open" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="/static/img/sprite.svg#search"></use>
+                </svg>
+                <svg class="usa-icon width-4 height-4 pmc-icon__close" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="/static/img/sprite.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="pmc-header__search">
+            
+
+
+<form class="usa-search usa-search--extra usa-search--article-right-column  pmc-header__search__form" id="pmc-search-form" autocomplete="off" role="search">
+<label class="usa-sr-only" for="pmc-search">Search PMC Full-Text Archive</label>
+<span class="autoComplete_wrapper flex-1">
+<input class="usa-input width-full maxw-none" required="required" placeholder="Search PMC Full-Text Archive" id="pmc-search" type="search" name="term" data-autocomplete-url="https://pmc.ncbi.nlm.nih.gov/autocomp/search/autocomp/" aria-controls="autoComplete_list_1" aria-autocomplete="both" role="combobox" aria-owns="autoComplete_list_1" aria-haspopup="true" aria-expanded="false"><ul id="autoComplete_list_1" role="listbox" hidden="" aria-label="Suggestions"></ul>
+</span>
+<button class="usa-button" type="submit" formaction="https://pmc.ncbi.nlm.nih.gov/search/" data-ga-category="search" data-ga-action="PMC" data-ga-label="PMC_search_button">
+<span class="usa-search__submit-text">Search in PMC</span>
+<img src="/static/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search">
+</button>
+</form>
+            <div class="display-flex flex-column tablet:flex-row tablet:flex-justify flex-justify-center flex-align-center width-full desktop:maxw-44">
+                <ul class="pmc-header__search__menu">
+                    <li>
+                        
+                            <a class="usa-link" href="/journals/" data-ga-action="featured_link" data-ga-label="journal list">
+                                Journal List
+                            </a>
+                        
+                    </li>
+                    <li>
+                        
+                            <a class="usa-link" href="/about/userguide/" data-ga-action="featured_link" data-ga-label="user guide">
+                                User Guide
+                            </a>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+
+        
+        
+
+       
+  <div class="usa-section padding-top-0 desktop:padding-top-6 pmc-article-section" data-article-db="pmc" data-article-id="3612296">
+
+    
+
+   
+
+
+
+<div class="grid-container pmc-actions-bar is-not-intersecting" aria-label="Actions bar" role="complementary">
+    <div class="grid-row">
+        <div class="grid-col-fill display-flex">
+             <div class="display-flex">
+                <ul class="usa-list usa-list--unstyled usa-list--horizontal">
+                    <li class="margin-right-2 mobile-lg:margin-right-4 display-flex mob">
+                        <button type="button" class="usa-button pmc-sidenav__container__open usa-button--unstyled width-auto display-flex" aria-label="Open resources" data-extra-class="is-visible-resources" data-ga-category="resources_accordion" data-ga-action="click" data-ga-label="mobile_icon">
+                            <svg class="usa-icon width-4 height-4" aria-hidden="true" focusable="false" role="img">
+                                <use xlink:href="/static/img/sprite.svg#more_vert"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    
+                    <li class="margin-right-2 mobile-lg:margin-right-4 display-flex mob">
+                        <span class="usa-tooltip"><a href="https://doi.org/10.4103/0970-0218.106617" class="usa-link display-flex usa-tooltip__trigger" role="button" target="_blank" rel="noreferrer noopener" data-position="bottom" aria-label="View on publisher site" data-ga-category="actions" data-ga-action="click" data-ga-label="publisher_link_mobile" aria-describedby="tooltip-938242" tabindex="0">
+                                <svg class="usa-icon width-4 height-4" aria-hidden="true" focusable="false" role="img">
+                                    <use xlink:href="/static/img/sprite.svg#launch"></use>
+                                </svg>
+                        </a><span class="usa-tooltip__body" id="tooltip-938242" role="tooltip" aria-hidden="true">View on publisher site</span></span>
+                    </li>
+                    
+                    
+                        <li class="margin-right-2 mobile-lg:margin-right-4 display-flex">
+                             <span class="usa-tooltip"><a href="pdf/IJCM-38-4.pdf" class="usa-link display-flex usa-tooltip__trigger" role="button" data-position="bottom" aria-label="Download PDF" data-ga-category="actions" data-ga-action="click" data-ga-label="pdf_download_mobile" aria-describedby="tooltip-603169" tabindex="0">
+                                <svg class="usa-icon width-4 height-4" aria-hidden="true" focusable="false" role="img">
+                                    <use xlink:href="/static/img/sprite.svg#file_download"></use>
+                                </svg>
+                            </a><span class="usa-tooltip__body" id="tooltip-603169" role="tooltip" aria-hidden="true">Download PDF</span></span>
+                        </li>
+                    
+                    <li class="margin-right-2 mobile-lg:margin-right-4 display-flex">
+                        <span class="usa-tooltip"><button class="usa-button usa-button--unstyled collections-dialog-trigger collections-button display-flex collections-button-empty usa-tooltip__trigger" data-position="bottom" aria-label="Save article in MyNCBI collections." data-ga-category="actions" data-ga-action="click" data-ga-label="collections_button_mobile" data-collections-open-dialog-enabled="false" data-collections-open-dialog-url="https://account.ncbi.nlm.nih.gov/?back_url=https%3A%2F%2Fpmc.ncbi.nlm.nih.gov%2Farticles%2FPMC3612296%2F%23open-collections-dialog" data-in-collections="false" aria-describedby="tooltip-309159" tabindex="0">
+                            <svg class="usa-icon width-4 height-4 usa-icon--bookmark-full" aria-hidden="true" focusable="false" role="img" hidden="">
+                                <use xlink:href="/static/img/action-bookmark-full.svg#icon"></use>
+                            </svg>
+                            <svg class="usa-icon width-4 height-4 usa-icon--bookmark-empty" aria-hidden="true" focusable="false" role="img" hidden="">
+                                <use xlink:href="/static/img/action-bookmark-empty.svg#icon"></use>
+                            </svg>
+                        </button><span class="usa-tooltip__body" id="tooltip-309159" role="tooltip" aria-hidden="true">Add to Collections</span></span>
+                    </li>
+                    
+                    <li class="margin-right-2 mobile-lg:margin-right-4 display-flex">
+                        <span class="usa-tooltip"><button role="button" class="usa-button usa-button--unstyled citation-dialog-trigger display-flex usa-tooltip__trigger" aria-label="Open dialog with citation text in different styles" data-position="bottom" data-ga-category="actions" data-ga-action="open" data-ga-label="cite_mobile" data-all-citations-url="/resources/citations/3612296/" data-citation-style="nlm" data-download-format-link="/resources/citations/3612296/export/" aria-describedby="tooltip-863392" tabindex="0">
+                            <svg class="usa-icon width-4 height-4 usa-icon--bookmark-empty" aria-hidden="true" focusable="false" role="img" hidden="">
+                                <use xlink:href="/static/img/sprite.svg#format_quote"></use>
+                            </svg>
+                        </button><span class="usa-tooltip__body" id="tooltip-863392" role="tooltip" aria-hidden="true">Cite</span></span>
+                    </li>
+                    
+                    <li class="pmc-permalink display-flex">
+                         <span class="usa-tooltip"><button type="button" data-position="bottom" class="usa-button usa-button--unstyled display-flex usa-tooltip__trigger" aria-label="Show article permalink" aria-expanded="false" aria-haspopup="true" data-ga-category="actions" data-ga-action="open" data-ga-label="permalink_mobile" aria-describedby="tooltip-493061" tabindex="0">
+                            <svg class="usa-icon width-4 height-4" aria-hidden="true" focusable="false" role="img">
+                                <use xlink:href="/static/img/sprite.svg#share"></use>
+                            </svg>
+                        </button><span class="usa-tooltip__body" id="tooltip-493061" role="tooltip" aria-hidden="true">Permalink</span></span>
+                        
+
+<div class="pmc-permalink__dropdown" hidden="">
+    <div class="pmc-permalink__dropdown__container">
+          <h2 class="usa-modal__heading margin-top-0 margin-bottom-2 text-uppercase font-sans-xs">PERMALINK</h2>
+          <div class="pmc-permalink__dropdown__content">
+              <input type="text" class="usa-input" value="https://pmc.ncbi.nlm.nih.gov/articles/PMC3612296/" aria-label="Article permalink">
+              <button class="usa-button display-inline-flex pmc-permalink__dropdown__copy__btn margin-right-0" title="Copy article permalink" data-ga-category="save_share" data-ga-action="link" data-ga-label="copy_link" aria-expanded="false">
+                  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="/static/img/sprite.svg#content_copy"></use>
+                  </svg>
+                  <span class="margin-left-1">Copy</span>
+              </button>
+          </div>
+    </div>
+</div>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="usa-button pmc-sidenav__container__open usa-button--unstyled width-auto display-flex" aria-label="Open article navigation" data-extra-class="is-visible-in-page" data-ga-category="actions" data-ga-action="open" data-ga-label="article_nav_mobile">
+                <svg class="usa-icon width-4 height-4" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="/static/img/sprite.svg#list"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+    <div class="grid-container desktop:padding-left-6">
+      <div id="article-container" class="grid-row grid-gap">
+        <div class="grid-col-12 desktop:grid-col-8 order-2 pmc-layout__content">
+            <div class="grid-container padding-left-0 padding-right-0">
+                <div class="grid-row desktop:margin-left-neg-6">
+                    <div class="grid-col-12">
+                        <div class="pmc-layout__disclaimer" role="complementary" aria-label="Disclaimer note">
+    As a library, NLM provides access to scientific literature. Inclusion in an NLM database does not imply endorsement of, or agreement with,
+    the contents by NLM or the National Institutes of Health.<br>
+    Learn more:
+    <a class="usa-link" data-ga-category="Link click" data-ga-action="Disclaimer" data-ga-label="New disclaimer box" href="/about/disclaimer/">PMC Disclaimer</a>
+    |
+    <a class="usa-link" data-ga-category="Link click" data-ga-action="PMC Copyright Notice" data-ga-label="New disclaimer box" href="/about/copyright/">
+        PMC Copyright Notice
+    </a>
+</div>
+                    </div>
+                </div>
+                <div class="grid-row pmc-wm desktop:margin-left-neg-6">
+                    <!-- Main content -->
+                    <main id="main-content" class="usa-layout-docs__main usa-layout-docs grid-col-12 pmc-layout pmc-prose padding-0">
+
+                      
+                        <section class="pmc-journal-banner text-center line-height-none" aria-label="Journal banner"><img src="https://cdn.ncbi.nlm.nih.gov/pmc/banners/logo-ijcommed.gif" alt="Indian Journal of Community Medicine: Official Publication of Indian Association of Preventive &amp; Social Medicine logo" usemap="#pmc-banner-imagemap" width="500" height="75"><map name="pmc-banner-imagemap"><area alt="Link to Indian Journal of Community Medicine: Official Publication of Indian Association of Preventive &amp; Social Medicine" title="Link to Indian Journal of Community Medicine: Official Publication of Indian Association of Preventive &amp; Social Medicine" shape="default" href="http://www.ijcm.org.in" target="_blank" rel="noopener noreferrer"></map></section><article lang="en"><section aria-label="Article citation and metadata"><section class="pmc-layout__citation font-secondary font-xs"><div>
+<div class="display-inline-block"><button type="button" class="cursor-pointer text-no-underline bg-transparent border-0 padding-0 text-left margin-0 text-normal text-primary" aria-controls="journal_context_menu" aria-expanded="false">Indian J Community Med</button></div>. 2013 Jan-Mar;38(1):4–8. doi: <a href="https://doi.org/10.4103/0970-0218.106617" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">10.4103/0970-0218.106617</a>
+</div>
+<nav id="journal_context_menu" hidden="hidden"><ul class="menu-list font-family-ui" role="menu">
+<li role="presentation"><a href="https://pmc.ncbi.nlm.nih.gov/search/?term=%22Indian%20J%20Community%20Med%22%5Bjour%5D" class="usa-link" role="menuitem">Search in PMC</a></li>
+<li role="presentation"><a href="https://pubmed.ncbi.nlm.nih.gov/?term=%22Indian%20J%20Community%20Med%22%5Bjour%5D" lang="en" class="usa-link" role="menuitem">Search in PubMed</a></li>
+<li role="presentation"><a href="https://www.ncbi.nlm.nih.gov/nlmcatalog?term=%22Indian%20J%20Community%20Med%22%5BTitle%20Abbreviation%5D" class="usa-link" role="menuitem">View in NLM Catalog</a></li>
+<li role="presentation"><a href="?term=%22Indian%20J%20Community%20Med%22%5Bjour%5D" class="usa-link" role="menuitem" data-add-to-search="true">Add to search</a></li>
+</ul></nav></section><section class="front-matter"><div class="ameta p font-secondary font-xs">
+<hgroup><h1>“Air pollution in Delhi: Its Magnitude and Effects on Health”</h1></hgroup><div class="cg p">
+<a href="https://pubmed.ncbi.nlm.nih.gov/?term=%22Rizwan%20SA%22%5BAuthor%5D" class="usa-link" aria-describedby="id1" aria-expanded="false"><span class="name western">SA Rizwan</span></a><div hidden="hidden" id="id1">
+<h3><span class="name western">SA Rizwan</span></h3>
+<div class="p">
+<sup>1</sup>Centre for Community Medicine, All India Institute of Medical Sciences, New Delhi, India</div>
+<div class="p">Find articles by <a href="https://pubmed.ncbi.nlm.nih.gov/?term=%22Rizwan%20SA%22%5BAuthor%5D" class="usa-link"><span class="name western">SA Rizwan</span></a>
+</div>
+</div>
+<sup>1</sup>, <a href="https://pubmed.ncbi.nlm.nih.gov/?term=%22Nongkynrih%20B%22%5BAuthor%5D" class="usa-link" aria-describedby="id2" aria-expanded="false"><span class="name western">Baridalyne Nongkynrih</span></a><div hidden="hidden" id="id2">
+<h3><span class="name western">Baridalyne Nongkynrih</span></h3>
+<div class="p">
+<sup>1</sup>Centre for Community Medicine, All India Institute of Medical Sciences, New Delhi, India</div>
+<div class="p">Find articles by <a href="https://pubmed.ncbi.nlm.nih.gov/?term=%22Nongkynrih%20B%22%5BAuthor%5D" class="usa-link"><span class="name western">Baridalyne Nongkynrih</span></a>
+</div>
+</div>
+<sup>1,</sup><sup>✉</sup>, <a href="https://pubmed.ncbi.nlm.nih.gov/?term=%22Gupta%20SK%22%5BAuthor%5D" class="usa-link" aria-describedby="id3" aria-expanded="false"><span class="name western">Sanjeev Kumar Gupta</span></a><div hidden="hidden" id="id3">
+<h3><span class="name western">Sanjeev Kumar Gupta</span></h3>
+<div class="p">
+<sup>1</sup>Centre for Community Medicine, All India Institute of Medical Sciences, New Delhi, India</div>
+<div class="p">Find articles by <a href="https://pubmed.ncbi.nlm.nih.gov/?term=%22Gupta%20SK%22%5BAuthor%5D" class="usa-link"><span class="name western">Sanjeev Kumar Gupta</span></a>
+</div>
+</div>
+<sup>1</sup>
+</div>
+<ul class="d-buttons inline-list">
+<li><button class="d-button" aria-controls="aip_a" aria-expanded="false">Author information</button></li>
+<li><button class="d-button" aria-controls="anp_a" aria-expanded="false">Article notes</button></li>
+<li><button class="d-button" aria-controls="clp_a" aria-expanded="false">Copyright and License information</button></li>
+</ul>
+<div class="d-panels font-secondary-light">
+<div id="aip_a" class="d-panel p" style="display: none">
+<div class="p" id="aff1">
+<sup>1</sup>Centre for Community Medicine, All India Institute of Medical Sciences, New Delhi, India</div>
+<div class="author-notes p"><div class="fn" id="cor1">
+<sup>✉</sup><p class="display-inline"><strong>Address for correspondence:</strong> Dr. Baridalyne Nongkynrih, Centre for Community Medicine, All India Institute of Medical Sciences, Ansari Nagar, New Delhi, India. E-mail: <span>baridalyne@gmail.com</span></p>
+</div></div>
+</div>
+<div id="anp_a" class="d-panel p" style="display: none"><div class="notes p"><section id="historyarticle-meta1" class="history"><p>Received 2011 Nov 8; Accepted 2012 Jun 17.</p></section></div></div>
+<div id="clp_a" class="d-panel p" style="display: none">
+<div>Copyright: © Indian Journal of Community Medicine</div>
+<p>This is an open-access article distributed under the terms of the Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</p>
+<div class="p"><a href="/about/copyright/" class="usa-link">PMC Copyright notice</a></div>
+</div>
+</div>
+<div>PMCID: PMC3612296&nbsp;&nbsp;PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/23559696/" class="usa-link">23559696</a>
+</div>
+</div></section></section><section aria-label="Article content"><section class="body main-article-body"><section class="abstract" id="abstract1"><h2 data-anchor-id="abstract1"><a id="abstract1-anchor" data-anchor-id="abstract1" class="usa-anchor"></a>Abstract</h2>
+<p>Air pollution is responsible for many health problems in the urban areas. Of late, the air pollution status in Delhi has undergone many changes in terms of the levels of pollutants and the control measures taken to reduce them. This paper provides an evidence-based insight into the status of air pollution in Delhi and its effects on health and control measures instituted. The urban air database released by the World Health Organization in September 2011 reported that Delhi has exceeded the maximum PM10 limit by almost 10-times at 198 <em>μ</em>g/m3. Vehicular emissions and industrial activities were found to be associated with indoor as well as outdoor air pollution in Delhi. Studies on air pollution and mortality from Delhi found that all-natural-cause mortality and morbidity increased with increased air pollution. Delhi has taken several steps to reduce the level of air pollution in the city during the last 10 years. However, more still needs to be done to further reduce the levels of air pollution.</p>
+<section id="kwd-group1" class="kwd-group"><p><strong>Keywords:</strong> Air pollution Delhi, control measures, health</p></section></section><hr class="headless">
+<p>Pollution refers to the contamination of the earth's environment with materials that interfere with human health, quality of life or the natural functioning of the ecosystems. The major forms of pollution include water pollution, air pollution, noise pollution and soil contamination. Other less-recognised forms include thermal pollution and radioactive hazards. It is difficult to hold any one particular form responsible for maximum risk to health; however, air and water pollution appear to be responsible for a large proportion of pollution related health problems.</p>
+<p>Of late, the air pollution status in Delhi has undergone many changes in terms of the levels of pollutants and the control measures taken to reduce them. This paper provides an evidence-based insight into the status of air pollution in Delhi and its effects on health and control measures instituted.</p>
+<section id="sec1-1"><h2 class="pmc_sec_title" data-anchor-id="sec1-1"><a id="sec1-1-anchor" data-anchor-id="sec1-1" class="usa-anchor"></a>Status of Air Pollution in Delhi</h2>
+<p>Delhi (or the National Capital Territory of Delhi), is jointly administered by the central and state governments. It accommodates nearly 167.5 lakh people (2011 Census of India).(<a href="#ref1" class="usa-link" aria-describedby="ref1" aria-expanded="false">1</a>)</p>
+<p>Metros across the world bear the major brunt of environmental pollution; likewise, Delhi is at the receiving end in India.</p>
+<p>A study funded by the World Bank Development Research Group was carried out in 1991-1994 to study the effects of air pollution.(<a href="#ref2" class="usa-link" aria-describedby="ref2" aria-expanded="false">2</a>) During the study period, the average total suspended particulate (TSP) level in Delhi was approximately five-times the World Health Organization's annual average standard. Furthermore, the total suspended particulate levels in Delhi during this time period exceeded the World Health Organization's 24-h standard on 97% of all days on which readings were taken. The study concluded that the impact of particulate matter on total non-trauma deaths in Delhi was smaller than the effects found in the United States of America, but found that a death associated with air pollution in Delhi caused more life-years to be lost because these deaths were occurring at a younger age.</p>
+<p>A report by the Ministry of Environment and Forests, India, in 1997 reviewed the environmental situation in Delhi over concerns of deteriorating conditions.(<a href="#ref3" class="usa-link" aria-describedby="ref3" aria-expanded="false">3</a>) Air pollution was one of the areas of concern identified in this study. It was estimated that about 3000 metric tons of air pollutants were emitted every day in Delhi, with a major contribution from vehicular pollution (67%), followed by coal-based thermal power plants (12%). There was a rising trend from 1989 to 1997 as monitored by the Central Pollution Control Board (CPCB). The concentrations of carbon monoxide from vehicular emissions in 1996 showed an increase of 92% over the values observed in 1989, consequent upon the increase in vehicular population. The particulate lead concentrations appeared to be in control; this was attributable to the de-leading of petrol and restrictions on lead-handling industrial units. Delhi has the highest cluster of small-scale industries in India that contribute to 12% of air pollutants along with other industrial units.</p>
+<p>Vehicular pollution is an important contributor to air pollution in Delhi. According to the Department of Transport, Government of National Capital Territory of Delhi, vehicular population is estimated at more than 3.4 million, reaching here at a growth rate of 7% per annum. Although this segment contributes to two-thirds of the air pollution, there has been a palpable decline compared to the 1995-1996 levels.</p>
+<p>The PM<sub>10</sub> standard is generally used to measure air quality. The PM<sub>10</sub> standard includes particles with a diameter of 10 μm or less (0.0004 inches or one-seventh the width of a human hair). These small particles are likely to be responsible for adverse health effects because of their ability to reach the lower regions of the respiratory tract. According to the Air Quality Guideline by the World Health Organization, the annual mean concentration recommended for PM<sub>10</sub> was 20 μg/m<sup>3</sup>, beyond which the risk for cardiopulmonary health effects are seen to increase.(<a href="#ref4" class="usa-link" aria-describedby="ref4" aria-expanded="false">4</a>) Major concerns for human health from exposure to PM<sub>10</sub> include effects on breathing and respiratory systems, damage to lung tissue, cancer and premature death. Elderly persons, children and people with chronic lung disease, influenza or asthma are especially sensitive to the effects of particulate matter. The urban air database released by the World Health Organization in September 2011 reported that Delhi has exceeded the maximum PM<sub>10</sub> limit by almost 10-times at 198 μg/m<sup>3</sup>, trailing in the third position after Ludhiana and Kanpur.(<a href="#ref5" class="usa-link" aria-describedby="ref5" aria-expanded="false">5</a>) Vehicular emissions and industrial activities were found to be associated with indoor as well as outdoor air pollution in Delhi [<a href="#T1" class="usa-link">Table 1</a>].(<a href="#ref6" class="usa-link" aria-describedby="ref6" aria-expanded="false">6</a>–<a href="#ref9" class="usa-link" aria-describedby="ref9" aria-expanded="false">9</a>)</p>
+<section class="tw xbox font-sm" id="T1"><h3 class="obj_head">Table 1.</h3>
+<div class="caption p"><p>Air pollutants in Delhi</p></div>
+<p class="img-box line-height-none margin-x-neg-2 tablet:margin-x-0 text-center"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/ff57/3612296/7fd8d17bad68/IJCM-38-4-g001.jpg" loading="lazy" height="573" width="560" alt="graphic file with name IJCM-38-4-g001.jpg"></p>
+<div class="p text-right font-secondary"><a href="table/T1/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div></section></section><section id="sec1-2"><h2 class="pmc_sec_title" data-anchor-id="sec1-2"><a id="sec1-2-anchor" data-anchor-id="sec1-2" class="usa-anchor"></a>Effects of Air Pollution on Health</h2>
+<p>A large number of studies in Delhi have examined the effect of air pollution on respiratory functions and the associated morbidity. The most comprehensive study among them was the one conducted by the Central Pollution Control Board in 2008, which identified significant associations with all relevant adverse health outcomes.(<a href="#ref10" class="usa-link" aria-describedby="ref10" aria-expanded="false">10</a>) The findings were compared with a rural control population in West Bengal. It was found that Delhi had 1.7-times higher prevalence of respiratory symptoms (in the past 3 months) compared with rural controls (<em>P</em> &lt; 0.001); the odds ratio of upper respiratory symptoms in the past 3 months in Delhi was 1.59 (95% CI 1.32-1.91) and for lower respiratory symptoms (dry cough,wheeze, breathlessness, chest discomfort) was 1.67 (95% CI 1.32-1.93). Prevalence of current asthma (in the last 12 months) and physician-diagnosed asthma among the participants of Delhi was significantly higher than in controls. Lung function was reduced in 40.3% individuals of Delhi compared with 20.1% in the control group. Delhi showed a statistically significant (<em>P</em> &lt; 0.05) increased prevalence of restrictive (22.5% vs. 11.4% in control), obstructive (10.7% vs. 6.6%) as well as combined (both obstructive and restrictive) type of lung functions deficits (7.1% vs. 2.0%). Metaplasia and dysplasia of airway epithelial cells were more frequent in Delhi, and Delhi had the greater prevalence of several cytological changes in sputum. Besides these, non-respiratory effects were also seen to be more in Delhi than in rural controls. The prevalence of hypertension was 36% in Delhi against 9.5% in the controls, which was found to be positively correlated with respirable suspended particulate matter (PM<sub>10</sub>) level in ambient air. Delhi had significantly higher levels of chronic headache, eye irritation and skin irritation.</p>
+<p>Several other community-based studies have found that air pollution is associated with respiratory morbidity.(<a href="#ref11" class="usa-link" aria-describedby="ref11" aria-expanded="false">11</a>–<a href="#ref13" class="usa-link" aria-describedby="ref13" aria-expanded="false">13</a>) Numerous studies have reported an association between indoor air pollution and respiratory morbidity.(<a href="#ref14" class="usa-link" aria-describedby="ref14" aria-expanded="false">14</a>–<a href="#ref19" class="usa-link" aria-describedby="ref19" aria-expanded="false">19</a>)Some of these studies have concentrated on children's respiratory morbidity.(<a href="#ref15" class="usa-link" aria-describedby="ref15" aria-expanded="false">15</a>,<a href="#ref17" class="usa-link" aria-describedby="ref17" aria-expanded="false">17</a>,<a href="#ref19" class="usa-link" aria-describedby="ref19" aria-expanded="false">19</a>) Other studies in children have found similar correlations between particulate matter in ambient air and attention-deficit hyperactivity disorder(<a href="#ref20" class="usa-link" aria-describedby="ref20" aria-expanded="false">20</a>) between vehicular air pollution and increased blood levels of lead (a potential risk factor for abnormal mental development in children)(<a href="#ref21" class="usa-link" aria-describedby="ref21" aria-expanded="false">21</a>) and between decreased serum concentration of vitamin D metabolites and lower mean haze score (a proxy measure for ultraviolet-B radiation reaching the ground).(<a href="#ref22" class="usa-link" aria-describedby="ref22" aria-expanded="false">22</a>)</p>
+<p>Studies that have examined the compounding effect of meteorological conditions on air pollution found that winter worsened the air quality of both indoor air and outdoor air. They also found a positive correlation between the winter weather and rise in the number of patients with chronic obstructive airway disease in hospitals.(<a href="#ref12" class="usa-link" aria-describedby="ref12" aria-expanded="false">12</a>,<a href="#ref16" class="usa-link" aria-describedby="ref16" aria-expanded="false">16</a>)</p>
+<p>There was a relative paucity of studies that measured outdoor air pollutant levels first hand and then tried to objectively correlate them to adverse health effects. However, some studies measured air pollutant levels and found a correlation with health-related events.(<a href="#ref17" class="usa-link" aria-describedby="ref17" aria-expanded="false">17</a>,<a href="#ref19" class="usa-link" aria-describedby="ref19" aria-expanded="false">19</a>)</p>
+<p>A time-series study on air pollution and mortality from Delhi found that all-natural-cause mortality increased with increased air pollution.(<a href="#ref23" class="usa-link" aria-describedby="ref23" aria-expanded="false">23</a>) In another study, gaseous pollutants, in spite of being at a level lower than the permissible level, showed more consistent association with respiratory admissions.(<a href="#ref24" class="usa-link" aria-describedby="ref24" aria-expanded="false">24</a>) In a hospital-based study, an increase in emergency room visits for asthma, chronic obstructive airway disease and acute coronary events was reported with an increase in air pollutant levels.(<a href="#ref25" class="usa-link" aria-describedby="ref25" aria-expanded="false">25</a>) These studies are summarized in <a href="#T2" class="usa-link">Table 2</a>.</p>
+<section class="tw xbox font-sm" id="T2"><h3 class="obj_head">Table 2.</h3>
+<div class="caption p"><p>Effects of air pollution in Delhi on health</p></div>
+<p class="img-box line-height-none margin-x-neg-2 tablet:margin-x-0 text-center"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/ff57/3612296/e0f46afadfb7/IJCM-38-4-g002.jpg" loading="lazy" height="506" width="1159" alt="graphic file with name IJCM-38-4-g002.jpg"></p>
+<div class="p text-right font-secondary"><a href="table/T2/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div></section></section><section id="sec1-3"><h2 class="pmc_sec_title" data-anchor-id="sec1-3"><a id="sec1-3-anchor" data-anchor-id="sec1-3" class="usa-anchor"></a>Control Measures Instituted by the Government of Delhi</h2>
+<p>The nodal ministry for protecting the environment is the Ministry of Environment and Forests at the Centre and the Department of Environment of the Government of National Capital Territory of Delhi. The Central Pollution Control Board set up in 1974 under the Water Act is the principal watchdog for carrying out the functions stated in the environmental acts, implementation of National Air Quality Monitoring Programme and other activities. The Delhi Pollution Control Board is the body responsible at the state level.</p>
+<p>From time to time, the judiciary has taken strong note of the deteriorating environmental conditions in Delhi in response to public litigations. One of the earliest such instances was the judgement passed by the Supreme Court of India to deal with the acute problem of vehicular pollution in Delhi in response to a writ petition filed in 1985. Subsequently, it ordered the shutdown of hazardous, noxious industries and hot-mix plants and brick kilns operating in Delhi.</p></section><section id="sec1-4"><h2 class="pmc_sec_title" data-anchor-id="sec1-4"><a id="sec1-4-anchor" data-anchor-id="sec1-4" class="usa-anchor"></a>Vehicular Policy</h2>
+<p>Control measures so far instituted include introduction of unleaded petrol (1998), catalytic converter in passenger cars (1995), reduction of sulfur content in diesel (2000) and reduction of benzene content in fuels (2000). Others include construction of flyovers and subways for smooth traffic flow, introduction of Metro rail and CNG for commercial transport vehicles (buses, taxis, auto rickshaws), phasing out of very old commercial vehicles, introduction of mandatory “Pollution Under Control” certificate with 3-month validity and stringent enforcement of emission norms complying with Bharat Stage II/Euro-II or higher emission norms. Introduction of The Air Ambience Fund levied from diesel sales and setting up of stringent emission norms for industries and thermal power stations are the other measures. Environmental awareness campaigns are also carried out at regular intervals. The Delhi Pollution Control Board conducts monthly Ambient Air Quality Monitoring at 40 locations in Delhi, and takes corrective action wherever necessary.</p></section><section id="sec1-5"><h2 class="pmc_sec_title" data-anchor-id="sec1-5"><a id="sec1-5-anchor" data-anchor-id="sec1-5" class="usa-anchor"></a>Industrial Policy</h2>
+<p>The first Industrial Policy for Delhi was introduced in 1982. Subsequently, a second Industrial policy (2010–2021) was issued by the Department of Industries, Government of Delhi. It is a comprehensive document envisioning higher industrial development in Delhi, with one of its mandates being to develop clean and non-polluting industries and details of steps to be undertaken in this direction have been described.</p>
+<p>There are many other organizations that work synergistically with the government efforts to reduce air pollution. These include the Centre for Science and Environment and The Energy and Resources Institute, and the Indian Association for Air Pollution Control. Representatives of the industries include Confederation of Indian Industry and Society of Indian Automobile Manufacturers. Government agencies like Factories Inspectorate are also involved in the control of pollution. Research and academic institutions include National Environmental Engineering Research Institute, Indian Institute of Technology, Council of Scientific and Industrial Research institutions, Indian Agricultural Research Institute and various other academic institutions in and around Delhi. Professional organizations like the Indian National Science Academy, the Indian Institute of Chemical Engineers and the Indian Institute of Engineers are also involved in pollution control.</p></section><section id="sec1-6"><h2 class="pmc_sec_title" data-anchor-id="sec1-6"><a id="sec1-6-anchor" data-anchor-id="sec1-6" class="usa-anchor"></a>Benefits Accrued as a Result of Control Measures</h2>
+<p>Since the first act on pollution was instituted, huge progress has been made in terms of human resource, infrastructure development and research capability. Some studies tried to gather evidence for the effectiveness of control measures by comparing pre- and post-intervention health status. The study conducted by the Central Pollution Control Board demonstrated that spending 8-10 h in clean indoor environment can reduce health effects of exposure to chronic air pollution.(<a href="#ref10" class="usa-link" aria-describedby="ref10" aria-expanded="false">10</a>) A recent study found significant improvement in the respiratory health following large-scale government initiatives to control air pollution.(<a href="#ref26" class="usa-link" aria-describedby="ref26" aria-expanded="false">26</a>) It was reported that use of lower-emission motor vehicles resulted in a significant gain in disability-adjusted life-years in Delhi.(<a href="#ref27" class="usa-link" aria-describedby="ref27" aria-expanded="false">27</a>) Another study found significant evidence for reduction in respiratory illness following introduction of control measures.(<a href="#ref24" class="usa-link" aria-describedby="ref24" aria-expanded="false">24</a>)</p>
+<p>Most of the studies were ecological correlation studies, which are severely limited in their ability to draw causal inferences. But, considering the context that demanded the research, these were probably the best available designs to produce preliminary and,sometimes, policy-influencing evidences, as any other methodology would be unethical or operationally impossible.</p></section><section id="sec1-7"><h2 class="pmc_sec_title" data-anchor-id="sec1-7"><a id="sec1-7-anchor" data-anchor-id="sec1-7" class="usa-anchor"></a>Conclusion</h2>
+<p>The Government of National Capital Territory of Delhi has taken several steps to reduce the level of air pollution in the city during the last 10 years. The benefits of air pollution control measures are showing in the readings. However, more still needs to be done to further reduce the levels of air pollution. The already existing measures need to be strengthened and magnified to a larger scale. The governmental efforts alone are not enough. Participation of the community is crucial in order to make a palpable effect in the reduction of pollution. The use of public transport needs to be promoted. The use of Metro rail can be encouraged by provision of an adequate number of feeder buses at Metro stations that ply with the desired frequency. More frequent checking of Pollution Under Control Certificates needs to be undertaken by the civic authorities to ensure that vehicles are emitting gases within permissible norms. People need to be educated to switch-off their vehicles when waiting at traffic intersections. Moreover, the “upstream” factors responsible for pollution also need to be addressed. The ever-increasing influx of migrants can be reduced by developing and creating job opportunities in the peripheral and suburban areas, and thus prevent further congestion of the already-choked capital city of Delhi.</p>
+<p>Health, as we all know, is an all-pervasive subject, lying not only within the domains of the health department but with all those involved in human development. Many great scholars from Charaka to Hippocrates have stressed the importance of environment in the health of the individual. Therefore, all those who play a role in modifying the environment in any way, for whatever reason, need to contribute to safeguard people's health by controlling all those factors which affect it.</p></section><section id="fn-group1" class="fn-group"><h2 class="pmc_sec_title" data-anchor-id="fn-group1"><a id="fn-group1-anchor" data-anchor-id="fn-group1" class="usa-anchor"></a>Footnotes</h2>
+<div class="fn-group p font-secondary-light font-sm">
+<div class="fn p" id="fn1"><p><strong>Source of Support:</strong> Nil</p></div>
+<div class="fn p" id="fn2"><p><strong>Conflict of Interest:</strong> None declared.</p></div>
+</div></section><section id="ref-list1" class="ref-list"><h2 class="pmc_sec_title" data-anchor-id="ref-list1"><a id="ref-list1-anchor" data-anchor-id="ref-list1" class="usa-anchor"></a>References</h2>
+<section id="ref-list1_sec2"><ul class="ref-list font-sm" style="list-style-type:none">
+<li id="ref1">
+<span class="label">1.</span><cite> [last accessed on 2011 September 20].  Available from:
+<a href="http://www.censusindia.gov.in/2011-provresults/data_files/delhi/0_PDFC-Paper-1-2011%20NCT%20of%20Delhi_9.pdf" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">http://www.censusindia.gov.in/2011-provresults/data_files/delhi/0_PDFC-Paper-1-2011%20NCT%20of%20 Delhi_9.pdf</a> .</cite>
+</li>
+<li id="ref2">
+<span class="label">2.</span><cite>Cropper Maureen L, Simon Nathalie B, Alberini Anna, Sharma P. K The World Bank Development Research Group. 1997. Dec,  [last accessed on 2011 September 20].  The Health Effects of Air Pollution in Delhi, India, Available from:
+<a href="http://www.airimpacts.org/documents/local/WB_WPS1860_Delhi_AQ.pdf" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">http://www.airimpacts.org/documents/local/WB_WPS1860_Delhi_AQ.pdf</a> .</cite>
+</li>
+<li id="ref3">
+<span class="label">3.</span><cite>White Paper on Pollution in Delhi with an Action Plan, Ministry of Environment &amp; Forests, Government OfIndia. 1997.  [last accessed on 2011 September 20].  Available from:
+<a href="http://envfor.nic.in/divisions/cpoll/delpolln.html" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">http://envfor.nic.in/divisions/cpoll/delpolln.html</a> .</cite>
+</li>
+<li id="ref4">
+<span class="label">4.</span><cite>WHO Air quality guidelines for particulate matter, ozone, nitrogen dioxide and sulfur dioxide, Global update 2005, Summary of risk assessment.  [last accessed on 2011 September 20].  Available from:
+<a href="http://whqlibdoc.who.int/hq/2006/WHO_SDE_PHE_OEH_06.02_eng.pdf" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">http://whqlibdoc.who.int/hq/2006/WHO_SDE_PHE_OEH_06.02_eng.pdf</a> .</cite>
+</li>
+<li id="ref5">
+<span class="label">5.</span><cite> [last accessed on 2011 September 20].  Available from:
+<a href="http://www.who.int/phe/health_topics/outdoorair/databases/en" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">http://www.who.int/phe/health_topics/outdoorair/databases/en</a> .</cite>
+</li>
+<li id="ref6">
+<span class="label">6.</span><cite>Goyal R, Khare M. Indo air quality modelling for PM 10, PM 2.5, PM 2.5, and PM 1.0 in naturally ventilated classrooms of an urban Indian school building. Environ Monit Assess. 2011;176:501–16. doi: 10.1007/s10661-010-1600-7.</cite> [<a href="https://doi.org/10.1007/s10661-010-1600-7" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/20635200/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Environ%20Monit%20Assess&amp;title=Indo%20air%20quality%20modelling%20for%20PM%2010,%20PM%202.5,%20PM%202.5,%20and%20PM%201.0%20in%20naturally%20ventilated%20classrooms%20of%20an%20urban%20Indian%20school%20building&amp;author=R%20Goyal&amp;author=M%20Khare&amp;volume=176&amp;publication_year=2011&amp;pages=501-16&amp;pmid=20635200&amp;doi=10.1007/s10661-010-1600-7&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref7">
+<span class="label">7.</span><cite>Kumar A, Scott Clark C. Lead loadings in household dust in Delhi, India. Indoor Air. 2009;19:414–20. doi: 10.1111/j.1600-0668.2009.00605.x.</cite> [<a href="https://doi.org/10.1111/j.1600-0668.2009.00605.x" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/19659889/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Indoor%20Air&amp;title=Lead%20loadings%20in%20household%20dust%20in%20Delhi,%20India&amp;author=A%20Kumar&amp;author=Clark%20C%20Scott&amp;volume=19&amp;publication_year=2009&amp;pages=414-20&amp;pmid=19659889&amp;doi=10.1111/j.1600-0668.2009.00605.x&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref8">
+<span class="label">8.</span><cite>Kumar A, Phadke KM, Tajne DS, Hasan MZ. Increase in inhalable particulates’ concentration by commercial and industrial activities in the ambient air of a select Indian metropolis. Environ Sci Technol. 2001;35:487–92. doi: 10.1021/es001280l.</cite> [<a href="https://doi.org/10.1021/es001280l" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/11351718/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Environ%20Sci%20Technol&amp;title=Increase%20in%20inhalable%20particulates%E2%80%99%20concentration%20by%20commercial%20and%20industrial%20activities%20in%20the%20ambient%20air%20of%20a%20select%20Indian%20metropolis&amp;author=A%20Kumar&amp;author=KM%20Phadke&amp;author=DS%20Tajne&amp;author=MZ%20Hasan&amp;volume=35&amp;publication_year=2001&amp;pages=487-92&amp;pmid=11351718&amp;doi=10.1021/es001280l&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref9">
+<span class="label">9.</span><cite>Balachandran S, Meena BR, Khillare PS. Particle size distribution and its elemental composition in the ambient air of Delhi. Environ Int. 2000;26:49–54. doi: 10.1016/s0160-4120(00)00077-5.</cite> [<a href="https://doi.org/10.1016/s0160-4120(00)00077-5" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/11345737/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Environ%20Int&amp;title=Particle%20size%20distribution%20and%20its%20elemental%20composition%20in%20the%20ambient%20air%20of%20Delhi&amp;author=S%20Balachandran&amp;author=BR%20Meena&amp;author=PS%20Khillare&amp;volume=26&amp;publication_year=2000&amp;pages=49-54&amp;pmid=11345737&amp;doi=10.1016/s0160-4120(00)00077-5&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref10">
+<span class="label">10.</span><cite>Epidemiological Study on Effect of Air Pollution on Human Health (Adults) in Delhi, Environmental Health Series: EHS/1/2008, Central Pollution Control Board, Ministry of Environment &amp; Forests, Govt. of India. 2008. Aug,  [last accessed on 2011 September 20].  Available from:
+<a href="http://cpcb.nic.in/upload/NewItems/NewItem_161_Adult.pdf" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">http://cpcb.nic.in/upload/NewItems/NewItem_161_Adult.pdf</a> .</cite>
+</li>
+<li id="ref11">
+<span class="label">11.</span><cite>Chhabra SK, Chhabra P, Rajpal S, Gupta RK. Ambient air pollution and chronic respiratory morbidity in Delhi. Arch Environ Health. 2001;56:58–64. doi: 10.1080/00039890109604055.</cite> [<a href="https://doi.org/10.1080/00039890109604055" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/11256858/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Arch%20Environ%20Health&amp;title=Ambient%20air%20pollution%20and%20chronic%20respiratory%20morbidity%20in%20Delhi&amp;author=SK%20Chhabra&amp;author=P%20Chhabra&amp;author=S%20Rajpal&amp;author=RK%20Gupta&amp;volume=56&amp;publication_year=2001&amp;pages=58-64&amp;pmid=11256858&amp;doi=10.1080/00039890109604055&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref12">
+<span class="label">12.</span><cite>Agarwal R, Jayaraman G, Anand S, Marimuthu P. Assessing respiratory morbidity through pollution status and meteorological conditions for Delhi. Environ Monit Assess. 2006;114:489–504. doi: 10.1007/s10661-006-4935-3.</cite> [<a href="https://doi.org/10.1007/s10661-006-4935-3" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/16570222/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Environ%20Monit%20Assess&amp;title=Assessing%20respiratory%20morbidity%20through%20pollution%20status%20and%20meteorological%20conditions%20for%20Delhi&amp;author=R%20Agarwal&amp;author=G%20Jayaraman&amp;author=S%20Anand&amp;author=P%20Marimuthu&amp;volume=114&amp;publication_year=2006&amp;pages=489-504&amp;pmid=16570222&amp;doi=10.1007/s10661-006-4935-3&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref13">
+<span class="label">13.</span><cite>Jayaraman G, Nidhi Air pollution and associated respiratory morbidity in Delhi. Health Care Manag Sci. 2008;11:132–8. doi: 10.1007/s10729-007-9050-7.</cite> [<a href="https://doi.org/10.1007/s10729-007-9050-7" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/18581819/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Health%20Care%20Manag%20Sci&amp;title=Air%20pollution%20and%20associated%20respiratory%20morbidity%20in%20Delhi&amp;author=G%20Jayaraman&amp;author=%20Nidhi&amp;volume=11&amp;publication_year=2008&amp;pages=132-8&amp;pmid=18581819&amp;doi=10.1007/s10729-007-9050-7&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref14">
+<span class="label">14.</span><cite>Firdaus G, Ahmad A. Indoor air pollution and self-reported diseases - a case study of NCT of Delhi. Indoor Air. 2011;21:410–6. doi: 10.1111/j.1600-0668.2011.00715.x.</cite> [<a href="https://doi.org/10.1111/j.1600-0668.2011.00715.x" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/21410536/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Indoor%20Air&amp;title=Indoor%20air%20pollution%20and%20self-reported%20diseases%20-%20a%20case%20study%20of%20NCT%20of%20Delhi&amp;author=G%20Firdaus&amp;author=A%20Ahmad&amp;volume=21&amp;publication_year=2011&amp;pages=410-6&amp;pmid=21410536&amp;doi=10.1111/j.1600-0668.2011.00715.x&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref15">
+<span class="label">15.</span><cite>Kumar R, Nagar JK, Kumar H, Kushwah AS, Meena M, Kumar P, et al.  Indoor air pollution and respiratory function of children in Ashok Vihar, Delhi: An exposure-response study. Asia Pac J Public Health. 2008;20:36–48. doi: 10.1177/1010539507308248.</cite> [<a href="https://doi.org/10.1177/1010539507308248" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/19124297/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Asia%20Pac%20J%20Public%20Health&amp;title=Indoor%20air%20pollution%20and%20respiratory%20function%20of%20children%20in%20Ashok%20Vihar,%20Delhi:%20An%20exposure-response%20study&amp;author=R%20Kumar&amp;author=JK%20Nagar&amp;author=H%20Kumar&amp;author=AS%20Kushwah&amp;author=M%20Meena&amp;volume=20&amp;publication_year=2008&amp;pages=36-48&amp;pmid=19124297&amp;doi=10.1177/1010539507308248&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref16">
+<span class="label">16.</span><cite>Kulshreshtha P, Khare M, Seetharaman P. Indoor air quality assessment in and around urban slums of Delhi city, India. Indoor Air. 2008;18:488–98. doi: 10.1111/j.1600-0668.2008.00550.x.</cite> [<a href="https://doi.org/10.1111/j.1600-0668.2008.00550.x" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/19120499/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Indoor%20Air&amp;title=Indoor%20air%20quality%20assessment%20in%20and%20around%20urban%20slums%20of%20Delhi%20city,%20India&amp;author=P%20Kulshreshtha&amp;author=M%20Khare&amp;author=P%20Seetharaman&amp;volume=18&amp;publication_year=2008&amp;pages=488-98&amp;pmid=19120499&amp;doi=10.1111/j.1600-0668.2008.00550.x&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref17">
+<span class="label">17.</span><cite>Saksena S, Singh PB, Prasad RK, Prasad R, Malhotra P, Joshi V, et al.  Exposure of infants to outdoor and indoor air pollution in low-income urban areas - a case study of Delhi. J Expo Anal Environ Epidemiol. 2003;13:219–30. doi: 10.1038/sj.jea.7500273.</cite> [<a href="https://doi.org/10.1038/sj.jea.7500273" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/12743616/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=J%20Expo%20Anal%20Environ%20Epidemiol&amp;title=Exposure%20of%20infants%20to%20outdoor%20and%20indoor%20air%20pollution%20in%20low-income%20urban%20areas%20-%20a%20case%20study%20of%20Delhi&amp;author=S%20Saksena&amp;author=PB%20Singh&amp;author=RK%20Prasad&amp;author=R%20Prasad&amp;author=P%20Malhotra&amp;volume=13&amp;publication_year=2003&amp;pages=219-30&amp;pmid=12743616&amp;doi=10.1038/sj.jea.7500273&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref18">
+<span class="label">18.</span><cite>Sharma S, Sethi GR, Rohtagi A, Chaudhary A, Shankar R, Bapna JS, et al.  Indoor air quality and acute lower respiratory infection in Indian urban slums. Environ Health Perspect. 1998;106:291–7. doi: 10.1289/ehp.98106291.</cite> [<a href="https://doi.org/10.1289/ehp.98106291" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="/articles/PMC1533083/" class="usa-link">PMC free article</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/9560355/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Environ%20Health%20Perspect&amp;title=Indoor%20air%20quality%20and%20acute%20lower%20respiratory%20infection%20in%20Indian%20urban%20slums&amp;author=S%20Sharma&amp;author=GR%20Sethi&amp;author=A%20Rohtagi&amp;author=A%20Chaudhary&amp;author=R%20Shankar&amp;volume=106&amp;publication_year=1998&amp;pages=291-7&amp;pmid=9560355&amp;doi=10.1289/ehp.98106291&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref19">
+<span class="label">19.</span><cite>Kumar R, Nagar JK, Kumar H, Kushwah AS, Meena M, Kumar P, et al.  Association of indoor and outdoor air pollutant level with respiratory problems among children in an industrial area of Delhi, India. Arch Environ Occup Health. 2007;62:75–80. doi: 10.3200/AEOH.62.2.75-80. Summer.</cite> [<a href="https://doi.org/10.3200/AEOH.62.2.75-80" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/18316264/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Arch%20Environ%20Occup%20Health&amp;title=Association%20of%20indoor%20and%20outdoor%20air%20pollutant%20level%20with%20respiratory%20problems%20among%20children%20in%20an%20industrial%20area%20of%20Delhi,%20India&amp;author=R%20Kumar&amp;author=JK%20Nagar&amp;author=H%20Kumar&amp;author=AS%20Kushwah&amp;author=M%20Meena&amp;volume=62&amp;publication_year=2007&amp;pages=75-80&amp;pmid=18316264&amp;doi=10.3200/AEOH.62.2.75-80&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref20">
+<span class="label">20.</span><cite>Siddique S, Banerjee M, Ray MR, Lahiri T. Attention-deficit hyperactivity disorder in children chronically exposed to high level of vehicular pollution. Eur J Pediatr. 2011;170:923–9. doi: 10.1007/s00431-010-1379-0.</cite> [<a href="https://doi.org/10.1007/s00431-010-1379-0" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/21191614/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Eur%20J%20Pediatr&amp;title=Attention-deficit%20hyperactivity%20disorder%20in%20children%20chronically%20exposed%20to%20high%20level%20of%20vehicular%20pollution&amp;author=S%20Siddique&amp;author=M%20Banerjee&amp;author=MR%20Ray&amp;author=T%20Lahiri&amp;volume=170&amp;publication_year=2011&amp;pages=923-9&amp;pmid=21191614&amp;doi=10.1007/s00431-010-1379-0&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref21">
+<span class="label">21.</span><cite>Kalra V, Chitralekha KT, Dua T, Pandey RM, Gupta Y. Blood lead levels and risk factors for lead toxicity in children from schools and an urban slum in Delhi. J Trop Pediatr. 2003;49:121–3. doi: 10.1093/tropej/49.2.121.</cite> [<a href="https://doi.org/10.1093/tropej/49.2.121" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/12729296/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=J%20Trop%20Pediatr&amp;title=Blood%20lead%20levels%20and%20risk%20factors%20for%20lead%20toxicity%20in%20children%20from%20schools%20and%20an%20urban%20slum%20in%20Delhi&amp;author=V%20Kalra&amp;author=KT%20Chitralekha&amp;author=T%20Dua&amp;author=RM%20Pandey&amp;author=Y%20Gupta&amp;volume=49&amp;publication_year=2003&amp;pages=121-3&amp;pmid=12729296&amp;doi=10.1093/tropej/49.2.121&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref22">
+<span class="label">22.</span><cite>Agarwal KS, Mughal MZ, Upadhyay P, Berry JL, Mawer EB, Puliyel JM. The impact of atmospheric pollution on vitamin D status of infants and toddlers in Delhi, India. Arch Dis Child. 2002;87:111–3. doi: 10.1136/adc.87.2.111.</cite> [<a href="https://doi.org/10.1136/adc.87.2.111" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="/articles/PMC1719192/" class="usa-link">PMC free article</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/12138058/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Arch%20Dis%20Child&amp;title=The%20impact%20of%20atmospheric%20pollution%20on%20vitamin%20D%20status%20of%20infants%20and%20toddlers%20in%20Delhi,%20India&amp;author=KS%20Agarwal&amp;author=MZ%20Mughal&amp;author=P%20Upadhyay&amp;author=JL%20Berry&amp;author=EB%20Mawer&amp;volume=87&amp;publication_year=2002&amp;pages=111-3&amp;pmid=12138058&amp;doi=10.1136/adc.87.2.111&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref23">
+<span class="label">23.</span><cite>Rajarathnam U, Sehgal M, Nairy S, Patnayak RC, Chhabra SK, Kilnani, et al.  HEI health review committee. Time-series study on air pollution and mortality in Delhi. Res Rep Health Eff Inst. 2011:47–74.</cite> [<a href="https://pubmed.ncbi.nlm.nih.gov/21648204/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Res%20Rep%20Health%20Eff%20Inst&amp;title=HEI%20health%20review%20committee.%20Time-series%20study%20on%20air%20pollution%20and%20mortality%20in%20Delhi&amp;author=U%20Rajarathnam&amp;author=M%20Sehgal&amp;author=S%20Nairy&amp;author=RC%20Patnayak&amp;author=SK%20Chhabra&amp;publication_year=2011&amp;pages=47-74&amp;pmid=21648204&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref24">
+<span class="label">24.</span><cite>Nidhi, Jayaraman G. Air quality and respiratory health in Delhi. Environ Monit Assess. 2007;135:313–25. doi: 10.1007/s10661-007-9651-0.</cite> [<a href="https://doi.org/10.1007/s10661-007-9651-0" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/17394093/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Environ%20Monit%20Assess&amp;title=Air%20quality%20and%20respiratory%20health%20in%20Delhi&amp;author=%20Nidhi&amp;author=G%20Jayaraman&amp;volume=135&amp;publication_year=2007&amp;pages=313-25&amp;pmid=17394093&amp;doi=10.1007/s10661-007-9651-0&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref25">
+<span class="label">25.</span><cite>Pande JN, Bhatta N, Biswas D, Pandey RM, Ahluwalia G, Siddaramaiah NH, et al.  Outdoor air pollution and emergency room visits at a hospital in Delhi. Indian J Chest Dis Allied Sci. 2002;44:13–9.</cite> [<a href="https://pubmed.ncbi.nlm.nih.gov/11845928/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Indian%20J%20Chest%20Dis%20Allied%20Sci&amp;title=Outdoor%20air%20pollution%20and%20emergency%20room%20visits%20at%20a%20hospital%20in%20Delhi&amp;author=JN%20Pande&amp;author=N%20Bhatta&amp;author=D%20Biswas&amp;author=RM%20Pandey&amp;author=G%20Ahluwalia&amp;volume=44&amp;publication_year=2002&amp;pages=13-9&amp;pmid=11845928&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref26">
+<span class="label">26.</span><cite>Foster A, Kumar N. Health effects of air quality regulations in Delhi, India. Atmos Environ. 2011;45:1675–83. doi: 10.1016/j.atmosenv.2011.01.005.</cite> [<a href="https://doi.org/10.1016/j.atmosenv.2011.01.005" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="/articles/PMC3068847/" class="usa-link">PMC free article</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/21461142/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Atmos%20Environ&amp;title=Health%20effects%20of%20air%20quality%20regulations%20in%20Delhi,%20India&amp;author=A%20Foster&amp;author=N%20Kumar&amp;volume=45&amp;publication_year=2011&amp;pages=1675-83&amp;pmid=21461142&amp;doi=10.1016/j.atmosenv.2011.01.005&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref27">
+<span class="label">27.</span><cite>Woodcock J, Edwards P, Tonne C, Armstrong BG, Ashiru O, Banister D, et al.  Public health benefits of strategies to reduce greenhouse-gas emissions: Urban land transport. Lancet. 2009;374:1930–43. doi: 10.1016/S0140-6736(09)61714-1.</cite> [<a href="https://doi.org/10.1016/S0140-6736(09)61714-1" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://pubmed.ncbi.nlm.nih.gov/19942277/" class="usa-link">PubMed</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Lancet&amp;title=Public%20health%20benefits%20of%20strategies%20to%20reduce%20greenhouse-gas%20emissions:%20Urban%20land%20transport&amp;author=J%20Woodcock&amp;author=P%20Edwards&amp;author=C%20Tonne&amp;author=BG%20Armstrong&amp;author=O%20Ashiru&amp;volume=374&amp;publication_year=2009&amp;pages=1930-43&amp;pmid=19942277&amp;doi=10.1016/S0140-6736(09)61714-1&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+</ul></section></section></section><footer class="p courtesy-note font-secondary font-sm text-center"><hr class="headless">
+<p>Articles from Indian Journal of Community Medicine : Official Publication of Indian Association of Preventive &amp; Social Medicine are provided here courtesy of <strong>Wolters Kluwer -- Medknow Publications</strong></p></footer></section></article>
+
+                      
+
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+
+<!-- Secondary navigation placeholder -->
+<div class="pmc-sidenav desktop:grid-col-4 display-flex">
+    <section class="pmc-sidenav__container" aria-label="Article resources and navigation">
+        <button type="button" class="usa-button pmc-sidenav__container__close usa-button--unstyled">
+            <img src="/static/img/usa-icons/close.svg" role="img" alt="Close">
+        </button>
+    <div class="display-none desktop:display-block">
+       <section class="margin-top-4 desktop:margin-top-0">
+              <h2 class="margin-top-0">ACTIONS</h2>
+           <ul class="usa-list usa-list--unstyled usa-list--actions">
+               
+               <li>
+                     <a href="https://doi.org/10.4103/0970-0218.106617" class="usa-button usa-button--outline width-24 font-xs display-inline-flex flex-align-center flex-justify-start padding-left-1" target="_blank" rel="noreferrer noopener" data-ga-category="actions" data-ga-action="click" data-ga-label="publisher_link_desktop">
+                         <svg class="usa-icon width-3 height-3" aria-hidden="true" focusable="false" role="img" hidden="">
+                            <use xlink:href="/static/img/sprite.svg#launch"></use>
+                         </svg>
+                         <span class="display-inline-flex flex-justify-center flex-1 padding-right-2">View on publisher site</span>
+                     </a>
+               </li>
+               
+               
+               <li>
+                    <a href="pdf/IJCM-38-4.pdf" class="usa-button usa-button--outline width-24 display-inline-flex flex-align-center flex-justify-start padding-left-1" data-ga-category="actions" data-ga-action="click" data-ga-label="pdf_download_desktop">
+                         <svg class="usa-icon width-3 height-3" aria-hidden="true" focusable="false" role="img" hidden="">
+                            <use xlink:href="/static/img/sprite.svg#file_download"></use>
+                        </svg>
+                        <span class="display-inline-flex flex-justify-center flex-1">PDF (457.7&nbsp;KB)</span>
+                    </a>
+               </li>
+               
+                
+               <li>
+                   <button role="button" class="usa-button width-24 citation-dialog-trigger display-inline-flex flex-align-center flex-justify-start padding-left-1" aria-label="Open dialog with citation text in different styles" data-ga-category="actions" data-ga-action="open" data-ga-label="cite_desktop" data-all-citations-url="/resources/citations/3612296/" data-citation-style="nlm" data-download-format-link="/resources/citations/3612296/export/">
+                        <svg class="usa-icon width-3 height-3" aria-hidden="true" focusable="false" role="img" hidden="">
+                            <use xlink:href="/static/img/sprite.svg#format_quote"></use>
+                        </svg>
+                       <span class="display-inline-flex flex-justify-center flex-1 button-label">Cite</span>
+                    </button>
+               </li>
+                
+               <li>
+
+                        <button class="usa-button width-24 collections-dialog-trigger collections-button display-inline-flex flex-align-center flex-justify-start padding-left-1 collections-button-empty" aria-label="Save article in MyNCBI collections." data-ga-category="actions" data-ga-action="click" data-ga-label="collections_button_desktop" data-collections-open-dialog-enabled="false" data-collections-open-dialog-url="https://account.ncbi.nlm.nih.gov/?back_url=https%3A%2F%2Fpmc.ncbi.nlm.nih.gov%2Farticles%2FPMC3612296%2F%23open-collections-dialog" data-in-collections="false">
+                            <svg class="usa-icon width-3 height-3 usa-icon--bookmark-full" aria-hidden="true" focusable="false" role="img" hidden="">
+                                <use xlink:href="/static/img/action-bookmark-full.svg#icon"></use>
+                            </svg>
+                            <svg class="usa-icon width-3 height-3 usa-icon--bookmark-empty" aria-hidden="true" focusable="false" role="img" hidden="">
+                                <use xlink:href="/static/img/action-bookmark-empty.svg#icon"></use>
+                            </svg>
+                            <span class="display-inline-flex flex-justify-center flex-1">Collections</span>
+                       </button>
+               </li>
+               <li class="pmc-permalink">
+                    <button type="button" class="usa-button width-24 display-inline-flex flex-align-center flex-justify padding-left-1 shadow-none" aria-label="Show article permalink" aria-expanded="false" aria-haspopup="true" data-ga-category="actions" data-ga-action="open" data-ga-label="permalink_desktop">
+                         <svg class="usa-icon width-3 height-3" aria-hidden="true" focusable="false" role="img" hidden="">
+                            <use xlink:href="/static/img/sprite.svg#share"></use>
+                        </svg>
+                        <span class="display-inline-flex flex-justify-center flex-1 button-label">Permalink</span>
+                    </button>
+                   
+
+<div class="pmc-permalink__dropdown" hidden="">
+    <div class="pmc-permalink__dropdown__container">
+          <h2 class="usa-modal__heading margin-top-0 margin-bottom-2 text-uppercase font-sans-xs">PERMALINK</h2>
+          <div class="pmc-permalink__dropdown__content">
+              <input type="text" class="usa-input" value="https://pmc.ncbi.nlm.nih.gov/articles/PMC3612296/" aria-label="Article permalink">
+              <button class="usa-button display-inline-flex pmc-permalink__dropdown__copy__btn margin-right-0" title="Copy article permalink" data-ga-category="save_share" data-ga-action="link" data-ga-label="copy_link" aria-expanded="false">
+                  <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="/static/img/sprite.svg#content_copy"></use>
+                  </svg>
+                  <span class="margin-left-1">Copy</span>
+              </button>
+          </div>
+    </div>
+</div>
+               </li>
+           </ul>
+       </section>
+     </div>
+
+        <section class="pmc-resources margin-top-6 desktop:margin-top-4" data-page-path="/articles/PMC3612296/">
+            <h2 class="margin-top-0">RESOURCES</h2>
+            
+                <div class="usa-accordion usa-accordion--multiselectable" data-allow-multiple="">
+                    <h3 class="usa-accordion__heading">
+                        <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="resources-similar-articles" data-ga-category="resources_accordion" data-ga-action="open_similar_articles" data-ga-label="/articles/PMC3612296/" data-action-open="open_similar_articles" data-action-close="close_similar_articles">
+                            Similar articles
+                        </button>
+                    </h3>
+                    <div id="resources-similar-articles" class="usa-accordion__content usa-prose" data-source-url="/resources/similar-article-links/23559696/" hidden="">
+                        
+                    </div>
+                    <h3 class="usa-accordion__heading">
+                        <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="resources-cited-by-other-articles" data-ga-category="resources_accordion" data-ga-action="open_cited_by" data-ga-label="/articles/PMC3612296/" data-action-open="open_cited_by" data-action-close="close_cited_by">
+                             Cited by other articles
+                        </button>
+                    </h3>
+                    <div id="resources-cited-by-other-articles" class="usa-accordion__content usa-prose" data-source-url="/resources/cited-by-links/23559696/" hidden="">
+                          
+                    </div>
+                    
+                        <h3 class="usa-accordion__heading">
+                            <button type="button" class="usa-accordion__button" aria-expanded="false" aria-controls="resources-links-to-ncbi-databases" data-ga-category="resources_accordion" data-ga-action="open_NCBI_links" data-ga-label="/articles/PMC3612296/" data-action-open="open_NCBI_links" data-action-close="close_NCBI_link">
+                                 Links to NCBI Databases
+                            </button>
+                        </h3>
+                        <div id="resources-links-to-ncbi-databases" class="usa-accordion__content usa-prose" data-source-url="/resources/db-links/3612296/" hidden="">
+                        </div>
+                    
+                    
+                </div>
+            
+        </section>
+
+
+        <section class="usa-in-page-nav usa-in-page-nav--wide margin-top-6 desktop:margin-top-4" data-title-text="On this page" data-title-heading-level="h2" data-scroll-offset="0" data-root-margin="-10% 0px -80% 0px" data-main-content-selector="main" data-threshold="1"><nav aria-label="On this page" class="usa-in-page-nav__nav"><h2 class="usa-in-page-nav__heading" tabindex="0">On this page</h2><ul class="usa-in-page-nav__list"><li class="usa-in-page-nav__item"><a data-anchor-id="abstract1" href="#abstract1" class="usa-in-page-nav__link" data-ga-category="article_side_nav" data-ga-action="click" data-ga-label="Abstract">Abstract</a></li><li class="usa-in-page-nav__item"><a data-anchor-id="sec1-1" href="#sec1-1" class="usa-in-page-nav__link" data-ga-category="article_side_nav" data-ga-action="click" data-ga-label="Status of Air Pollution in Delhi">Status of Air Pollution in Delhi</a></li><li class="usa-in-page-nav__item"><a data-anchor-id="sec1-2" href="#sec1-2" class="usa-in-page-nav__link" data-ga-category="article_side_nav" data-ga-action="click" data-ga-label="Effects of Air Pollution on Health">Effects of Air Pollution on Health</a></li><li class="usa-in-page-nav__item"><a data-anchor-id="sec1-3" href="#sec1-3" class="usa-in-page-nav__link" data-ga-category="article_side_nav" data-ga-action="click" data-ga-label="Control Measures Instituted by the Government of Delhi">Control Measures Instituted by the Government of Delhi</a></li><li class="usa-in-page-nav__item"><a data-anchor-id="sec1-4" href="#sec1-4" class="usa-in-page-nav__link" data-ga-category="article_side_nav" data-ga-action="click" data-ga-label="Vehicular Policy">Vehicular Policy</a></li><li class="usa-in-page-nav__item"><a data-anchor-id="sec1-5" href="#sec1-5" class="usa-in-page-nav__link" data-ga-category="article_side_nav" data-ga-action="click" data-ga-label="Industrial Policy">Industrial Policy</a></li><li class="usa-in-page-nav__item"><a data-anchor-id="sec1-6" href="#sec1-6" class="usa-in-page-nav__link" data-ga-category="article_side_nav" data-ga-action="click" data-ga-label="Benefits Accrued as a Result of Control Measures">Benefits Accrued as a Result of Control Measures</a></li><li class="usa-in-page-nav__item"><a data-anchor-id="sec1-7" href="#sec1-7" class="usa-in-page-nav__link" data-ga-category="article_side_nav" data-ga-action="click" data-ga-label="Conclusion">Conclusion</a></li><li class="usa-in-page-nav__item"><a data-anchor-id="fn-group1" href="#fn-group1" class="usa-in-page-nav__link" data-ga-category="article_side_nav" data-ga-action="click" data-ga-label="Footnotes">Footnotes</a></li><li class="usa-in-page-nav__item"><a data-anchor-id="ref-list1" href="#ref-list1" class="usa-in-page-nav__link" data-ga-category="article_side_nav" data-ga-action="click" data-ga-label="References">References</a></li></ul></nav></section>
+    </section>
+</div>
+
+
+        
+
+<div class="overlay citation-dialog-overlay" role="dialog" aria-label="Citation Dialog">
+    <div class="dialog citation-dialog" aria-hidden="true" role="document">
+        <div class="display-inline-flex flex-align-center flex-justify width-full margin-bottom-2">
+            <h2 class="usa-modal__heading margin-0">Cite</h2>
+             <button type="button" class="usa-button usa-button--unstyled close-overlay text-black width-auto" tabindex="1" data-pinger-ignore="true">
+                <svg class="usa-icon width-3 height-3" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="/static/img/sprite.svg#close"></use>
+                </svg>
+             </button>
+        </div>
+
+        
+
+<div class="citation-text-block">
+  <div class="citation-text margin-bottom-2"></div>
+  <ul class="usa-list usa-list--unstyled display-inline-flex flex-justify width-full flex-align-center">
+      <li>
+        <button class="usa-button usa-button--unstyled text-no-underline display-flex flex-align-center copy-button dialog-focus" data-ga-category="save_share" data-ga-action="cite" data-ga-label="copy" tabindex="2">
+            <svg class="usa-icon width-3 height-3" aria-hidden="true" focusable="false" role="img">
+                <use xlink:href="/static/img/sprite.svg#content_copy"></use>
+            </svg>
+            <span>Copy</span>
+        </button>
+      </li>
+      <li>
+          <a href="#" role="button" class="usa-button usa-button--unstyled text-no-underline display-flex flex-align-center export-button" data-ga-category="save_share" data-ga-action="cite" data-ga-label="download" title="Download a file for external citation management software" tabindex="3">
+                <svg class="usa-icon width-3 height-3" aria-hidden="true" focusable="false" role="img">
+                    <use xlink:href="/static/img/sprite.svg#file_download"></use>
+                </svg>
+                <span class="display-none mobile-lg:display-inline">Download .nbib</span>
+                <span class="display-inline mobile-lg:display-none">.nbib</span>
+            </a>
+      </li>
+      <li>
+          
+
+<div class="display-inline-flex flex-align-center">
+  <label class="usa-label margin-top-0">Format:</label>
+  <select aria-label="Format" class="usa-select citation-style-selector padding-1 margin-top-0 border-0 padding-right-4" tabindex="4">
+    
+      <option data-style-url-name="ama" value="AMA">
+        AMA
+      </option>
+    
+      <option data-style-url-name="apa" value="APA">
+        APA
+      </option>
+    
+      <option data-style-url-name="mla" value="MLA">
+        MLA
+      </option>
+    
+      <option data-style-url-name="nlm" value="NLM" selected="selected">
+        NLM
+      </option>
+    
+  </select>
+</div>
+      </li>
+  </ul>
+<div class="dots-loading-indicator citation-loading-indicator">
+        <div class="dot dot-1"></div>
+        <div class="dot dot-2"></div>
+        <div class="dot dot-3"></div>
+      </div></div>
+    </div>
+</div>
+
+        <div class="overlay collections-dialog-overlay" role="dialog">
+  <div id="collections-action-dialog" class="dialog collections-dialog" aria-hidden="true" role="document">
+   <div class="display-inline-flex flex-align-center flex-justify width-full margin-bottom-2">
+        <h2 class="usa-modal__heading margin-0">Add to Collections</h2>
+    </div>
+    <div class="collections-action-panel action-panel">
+      
+
+
+<form id="collections-action-dialog-form" class="usa-form maxw-full collections-action-panel-form action-panel-content action-form action-panel-smaller-selectors" data-existing-collections-url="/list-existing-collections/" data-add-to-existing-collection-url="/add-to-existing-collection/" data-create-and-add-to-new-collection-url="/create-and-add-to-new-collection/" data-myncbi-max-collection-name-length="100" data-collections-root-url="https://www.ncbi.nlm.nih.gov/myncbi/collections/">
+
+    <input type="hidden" name="csrfmiddlewaretoken" value="l19vWmxXXEL2jmXcqm3G6P52seu90FitbGhHKV8ICqSBuaorXnU0e7YPA3JB4dcg">
+
+    <fieldset class="usa-fieldset margin-bottom-2">
+        <div class="usa-radio">
+            <input type="radio" id="collections-action-dialog-new" class="usa-radio__input usa-radio__input--tile collections-new  margin-top-0" name="collections" value="new" data-ga-category="collections_button" data-ga-action="click" data-ga-label="collections_radio_new">
+            <label class="usa-radio__label" for="collections-action-dialog-new">Create a new collection</label>
+        </div>
+        <div class="usa-radio">
+            <input type="radio" id="collections-action-dialog-existing" class="usa-radio__input usa-radio__input--tile collections-existing" name="collections" value="existing" checked="true" data-ga-category="collections_button" data-ga-action="click" data-ga-label="collections_radio_existing">
+            <label class="usa-radio__label" for="collections-action-dialog-existing">Add to an existing collection</label>
+        </div>
+    </fieldset>
+
+    <fieldset class="usa-fieldset margin-bottom-2">
+        <div class="action-panel-control-wrap new-collections-controls">
+           <label for="collections-action-dialog-add-to-new" class="usa-label margin-top-0">
+                Name your collection
+               <abbr title="required" class="usa-hint usa-hint--required text-no-underline">*</abbr>
+          </label>
+          <input type="text" name="add-to-new-collection" id="collections-action-dialog-add-to-new" class="usa-input collections-action-add-to-new" pattern="[^&quot;&amp;=<>/]*" title="The following characters are not allowed in the Name field: &quot;&amp;=<>/" maxlength="" data-ga-category="collections_button" data-ga-action="create_collection" data-ga-label="non_favorties_collection" required="">
+        </div>
+        <div class="action-panel-control-wrap existing-collections-controls">
+             <label for="collections-action-dialog-add-to-existing" class="usa-label margin-top-0">
+                Choose a collection
+              </label>
+              <select id="collections-action-dialog-add-to-existing" class="usa-select collections-action-add-to-existing" data-ga-category="collections_button" data-ga-action="select_collection" data-ga-label="($('.collections-action-add-to-existing').val() === 'Favorites') ? 'Favorites' : 'non_favorites_collection'">
+              </select>
+              <div class="collections-retry-load-on-error usa-input-error-message selection-validation-message">
+                Unable to load your collection due to an error<br>
+                <a href="#">Please try again</a>
+              </div>
+        </div>
+    </fieldset>
+
+    <div class="display-inline-flex">
+        <button class="usa-button margin-top-0 action-panel-submit" type="submit" data-loading-label="Adding..." data-pinger-ignore="" data-ga-category="collections_button" data-ga-action="click" data-ga-label="add">
+          Add
+        </button>
+        <button class="usa-button usa-button--outline margin-top-0 action-panel-cancel" aria-label="Close 'Add to Collections' panel" ref="linksrc=close_collections_panel" data-ga-category="collections_button" data-ga-action="click" data-ga-label="cancel">
+          Cancel
+        </button>
+    </div>
+</form>
+    </div>
+  </div>
+</div>
+
+        
+
+      </div>
+    </div>
+  </div>
+
+
+
+        
+    
+    
+
+<footer class="ncbi-footer ncbi-dark-background ">
+    
+        <div class="ncbi-footer__icon-section">
+            <div class="ncbi-footer__social-header">
+                Follow NCBI
+            </div>
+
+            <div class="grid-container ncbi-footer__ncbi-social-icons-container">
+                
+                    <a href="https://twitter.com/ncbi" class="ncbi-footer__social-icon ncbi-footer__social-icon--gray" target="_blank" rel="noreferrer noopener">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                            <path d="m6.067 8 10.81 13.9L6 33.2h4.2l8.4-9.1 7.068 9.1H34L22.8 18.5 31.9 8h-3.5l-7.7 8.4L14.401 8H6.067Zm3.6 1.734h3.266l16.8 21.732H26.57L9.668 9.734Z">
+                            </path>
+                        </svg>
+                        <span class="usa-sr-only">NCBI on X (formerly known as Twitter)</span>
+                    </a>
+                
+
+                
+                    <a href="https://www.facebook.com/ncbi.nlm" class="ncbi-footer__social-icon ncbi-footer__social-icon--gray" target="_blank" rel="noreferrer noopener">
+                        <svg width="16" height="29" focusable="false" aria-hidden="true" viewBox="0 0 16 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.8809 21.4002C3.8809 19.0932 3.8809 16.7876 3.8809 14.478C3.8809 14.2117 3.80103 14.1452 3.54278 14.1492C2.53372 14.1638 1.52334 14.1492 0.514288 14.1598C0.302626 14.1598 0.248047 14.0972 0.248047 13.8936C0.256034 12.4585 0.256034 11.0239 0.248047 9.58978C0.248047 9.37013 0.302626 9.30224 0.528931 9.3049C1.53798 9.31688 2.54837 9.3049 3.55742 9.31555C3.80103 9.31555 3.8809 9.26097 3.87957 9.00272C3.87158 8.00565 3.85428 7.00592 3.90753 6.00884C3.97142 4.83339 4.31487 3.73115 5.04437 2.78467C5.93095 1.63318 7.15699 1.09005 8.56141 0.967577C10.5582 0.79319 12.555 0.982221 14.5518 0.927641C14.7102 0.927641 14.7462 0.99287 14.7449 1.13664C14.7449 2.581 14.7449 4.02668 14.7449 5.47104C14.7449 5.67604 14.6517 5.68669 14.4946 5.68669C13.4523 5.68669 12.4113 5.68669 11.3703 5.68669C10.3506 5.68669 9.92057 6.10868 9.90593 7.13904C9.89661 7.7647 9.91525 8.39303 9.89794 9.01869C9.88995 9.26364 9.96583 9.31822 10.2015 9.31688C11.7204 9.30623 13.2393 9.31688 14.7595 9.3049C15.0257 9.3049 15.0723 9.3728 15.0444 9.62439C14.89 10.9849 14.7515 12.3467 14.6144 13.7085C14.5691 14.1571 14.5785 14.1585 14.1458 14.1585C12.8386 14.1585 11.5313 14.1665 10.2254 14.1518C9.95119 14.1518 9.89794 14.2317 9.89794 14.4899C9.90593 19.0799 9.89794 23.6752 9.91125 28.2612C9.91125 28.5674 9.8407 28.646 9.53186 28.6433C7.77866 28.6273 6.02414 28.6366 4.27094 28.634C3.82499 28.634 3.87158 28.6992 3.87158 28.22C3.87602 25.9472 3.87913 23.6739 3.8809 21.4002Z">
+                            </path>
+                        </svg>
+                        <span class="usa-sr-only">NCBI on Facebook</span>
+                    </a>
+                
+
+                
+                    <a href="https://www.linkedin.com/company/ncbinlm" class="ncbi-footer__social-icon ncbi-footer__social-icon--gray" target="_blank" rel="noreferrer noopener">
+                        <svg width="25" height="23" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                            <path d="M14.6983 9.98423C15.6302 9.24808 16.5926 8.74754 17.6762 8.51991C19.673 8.09126 21.554 8.30824 23.1262 9.7526C24.2351 10.7723 24.7529 12.1115 25.0165 13.5612C25.1486 14.3363 25.2105 15.1218 25.2015 15.9081C25.2015 18.3043 25.2015 20.6898 25.2082 23.0806C25.2082 23.3468 25.1549 23.444 24.8621 23.4414C23.1297 23.4272 21.3992 23.4272 19.6704 23.4414C19.4041 23.4414 19.3429 23.3588 19.3442 23.1019C19.3535 20.5194 19.3442 17.9368 19.3442 15.3543C19.3442 14.0005 18.3258 12.9448 17.0266 12.9488C15.7273 12.9528 14.6983 14.0071 14.6983 15.361C14.6983 17.9328 14.6917 20.5047 14.6983 23.0753C14.6983 23.3708 14.6198 23.444 14.3296 23.4427C12.6185 23.4294 10.9079 23.4294 9.19779 23.4427C8.93155 23.4427 8.86099 23.3735 8.86232 23.1086C8.8783 19.7619 8.88628 16.4144 8.88628 13.066C8.88628 11.5688 8.87874 10.0708 8.86365 8.57182C8.86365 8.3575 8.90758 8.27896 9.14054 8.28029C10.9048 8.29094 12.6687 8.29094 14.4321 8.28029C14.6464 8.28029 14.6983 8.34818 14.6983 8.54653C14.6903 9.00047 14.6983 9.45441 14.6983 9.98423Z">
+                            </path>
+                            <path d="M6.55316 15.8443C6.55316 18.2564 6.55316 20.6699 6.55316 23.082C6.55316 23.3629 6.48127 23.4388 6.19906 23.4374C4.47737 23.4241 2.75568 23.4241 1.03399 23.4374C0.767751 23.4374 0.69986 23.3629 0.701191 23.1006C0.709178 18.2648 0.709178 13.4281 0.701191 8.59053C0.701191 8.34026 0.765089 8.27237 1.01669 8.2737C2.74991 8.28435 4.48048 8.28435 6.20838 8.2737C6.47462 8.2737 6.5465 8.33627 6.54517 8.6065C6.54783 11.0186 6.55316 13.4308 6.55316 15.8443Z">
+                            </path>
+                            <path d="M3.65878 0.243898C5.36804 0.243898 6.58743 1.45529 6.58743 3.1406C6.58743 4.75801 5.32145 5.95742 3.60819 5.96807C3.22177 5.97614 2.83768 5.90639 2.47877 5.76299C2.11985 5.61959 1.79344 5.40546 1.51897 5.13334C1.24449 4.86123 1.02755 4.53668 0.881058 4.17902C0.734563 3.82136 0.661505 3.43788 0.666231 3.05141C0.67555 1.42601 1.9362 0.242566 3.65878 0.243898Z">
+                            </path>
+                        </svg>
+                        <span class="usa-sr-only">NCBI on LinkedIn</span>
+                    </a>
+                
+
+                
+                    <a href="https://github.com/ncbi" class="ncbi-footer__social-icon ncbi-footer__social-icon--gray" target="_blank" rel="noreferrer noopener">
+                        <svg width="28" height="27" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                            <path d="M16.7228 20.6334C17.5057 20.5527 18.2786 20.3944 19.0301 20.1608C21.3108 19.4193 22.5822 17.8259 22.963 15.4909C23.1228 14.5112 23.1814 13.5287 22.9883 12.5437C22.8106 11.6423 22.4013 10.8028 21.8007 10.1076C21.7526 10.0605 21.7197 10 21.7064 9.934C21.6931 9.86799 21.7 9.79952 21.7262 9.73748C22.0856 8.6206 21.9711 7.51969 21.601 6.42677C21.582 6.3497 21.5345 6.2827 21.468 6.23923C21.4016 6.19577 21.3211 6.17906 21.2429 6.19248C20.7329 6.21649 20.2313 6.33051 19.7611 6.52928C19.1103 6.7908 18.4899 7.12198 17.9104 7.51703C17.84 7.56996 17.7581 7.60551 17.6713 7.62078C17.5846 7.63605 17.4954 7.6306 17.4112 7.60489C15.2596 7.05882 13.0054 7.06203 10.8554 7.61421C10.7806 7.63586 10.7018 7.63967 10.6253 7.62534C10.5487 7.611 10.4766 7.57892 10.4148 7.53167C9.64788 7.03247 8.85171 6.58918 7.96368 6.33359C7.65781 6.24338 7.34123 6.19458 7.02239 6.18849C6.94879 6.17986 6.87462 6.19893 6.81432 6.242C6.75402 6.28507 6.71191 6.34904 6.69621 6.42145C6.32342 7.51437 6.2209 8.61527 6.56307 9.73348C6.59635 9.84264 6.64694 9.93316 6.54177 10.0516C5.47666 11.2604 5.09988 12.6834 5.19574 14.2676C5.2663 15.4244 5.46201 16.5466 6.01454 17.5769C6.84399 19.1171 8.21664 19.9119 9.85158 20.3352C10.3938 20.4706 10.9444 20.5698 11.4998 20.632C11.5384 20.7492 11.4506 20.7798 11.408 20.8291C11.1734 21.1179 10.9894 21.4441 10.8634 21.7942C10.7622 22.0458 10.8315 22.4039 10.6065 22.5516C10.263 22.7766 9.83827 22.8485 9.42421 22.8871C8.17936 23.0056 7.26471 22.4877 6.6283 21.4348C6.25552 20.8184 5.76956 20.3325 5.08523 20.0663C4.76981 19.9325 4.42139 19.8967 4.08537 19.9638C3.7898 20.029 3.73788 20.1901 3.93891 20.4111C4.03639 20.5234 4.14989 20.6207 4.27575 20.6999C4.9796 21.1318 5.51717 21.7884 5.80152 22.5636C6.37002 23.9973 7.48039 24.5697 8.93825 24.6323C9.43741 24.6575 9.93768 24.615 10.4254 24.5058C10.5892 24.4672 10.6531 24.4872 10.6517 24.6762C10.6451 25.4936 10.6637 26.3123 10.6517 27.131C10.6517 27.6635 10.1684 27.9297 9.58663 27.7393C8.17396 27.2671 6.84977 26.5631 5.66838 25.656C2.59555 23.2891 0.720966 20.1861 0.217704 16.3376C-0.357453 11.9127 0.911353 8.00824 3.98551 4.73881C6.11909 2.42656 8.99932 0.939975 12.1203 0.540191C16.5351 -0.0601815 20.4347 1.14323 23.7232 4.16373C26.2449 6.47869 27.724 9.37672 28.1048 12.7726C28.5828 17.0325 27.3686 20.7945 24.4768 23.9827C22.9762 25.6323 21.0956 26.8908 18.9982 27.6488C18.8783 27.6927 18.7585 27.738 18.636 27.7726C18.0356 27.9404 17.6189 27.6395 17.6189 27.0098C17.6189 25.7452 17.6308 24.4806 17.6295 23.2159C17.6329 22.9506 17.6128 22.6856 17.5696 22.4238C17.4325 21.6664 17.3419 21.484 16.7228 20.6334Z">
+                            </path>
+                        </svg>
+                        <span class="usa-sr-only">NCBI on GitHub</span>
+                    </a>
+                
+
+                
+                    <a href="https://ncbiinsights.ncbi.nlm.nih.gov/" class="ncbi-footer__social-icon ncbi-footer__social-icon--gray" target="_blank" rel="noreferrer noopener">
+                        <svg width="26" height="26" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                            <path d="M23.7778 26.4574C23.1354 26.3913 22.0856 26.8024 21.636 26.3087C21.212 25.8444 21.4359 24.8111 21.324 24.0347C19.9933 14.8323 14.8727 8.80132 6.09057 5.85008C4.37689 5.28406 2.58381 4.99533 0.779072 4.99481C0.202773 4.99481 -0.0229751 4.83146 0.00455514 4.21479C0.0660406 3.08627 0.0660406 1.95525 0.00455514 0.826734C-0.0413285 0.0815827 0.259669 -0.0193618 0.896534 0.00266238C6.96236 0.222904 12.3693 2.24179 16.9889 6.16209C22.9794 11.2478 26.1271 17.7688 26.4372 25.648C26.4629 26.294 26.3179 26.5271 25.6609 26.4684C25.0827 26.417 24.4991 26.4574 23.7778 26.4574Z">
+                            </path>
+                            <path d="M14.8265 26.441C14.0924 26.441 13.2371 26.6795 12.6626 26.3786C12.0092 26.0372 12.3781 25.0644 12.246 24.378C11.1154 18.5324 6.6849 14.5497 0.74755 14.1001C0.217135 14.0615 -0.0104482 13.9422 0.0134113 13.3659C0.0519536 12.1454 0.0482829 10.9213 0.0134113 9.69524C-0.00127145 9.14464 0.196946 9.03268 0.703502 9.04736C9.21217 9.27128 16.5994 16.2511 17.2804 24.7231C17.418 26.4446 17.418 26.4446 15.6579 26.4446H14.832L14.8265 26.441Z">
+                            </path>
+                            <path d="M3.58928 26.4555C2.64447 26.4618 1.73584 26.0925 1.06329 25.4289C0.39073 24.7653 0.00933763 23.8617 0.0030097 22.9169C-0.00331824 21.9721 0.365937 21.0635 1.02954 20.3909C1.69315 19.7184 2.59675 19.337 3.54156 19.3306C4.48637 19.3243 5.39499 19.6936 6.06755 20.3572C6.7401 21.0208 7.1215 21.9244 7.12782 22.8692C7.13415 23.814 6.7649 24.7226 6.10129 25.3952C5.43768 26.0677 4.53409 26.4491 3.58928 26.4555Z">
+                            </path>
+                        </svg>
+                        <span class="usa-sr-only">NCBI RSS feed</span>
+                    </a>
+                
+            </div>
+        </div>
+    
+
+    <div data-testid="gridContainer" class="grid-container ncbi-footer__container">
+        <div class="grid-row ncbi-footer__main-content-container" data-testid="grid">
+            
+                <div class="ncbi-footer__column">
+                    
+                        <p class="ncbi-footer__circled-icons-heading">
+                            Connect with NLM
+                        </p>
+                    
+
+                    <div class="ncbi-footer__circled-icons-list">
+                        
+                            <a href="https://twitter.com/nlm_nih" class="ncbi-footer__social-icon ncbi-footer__social-icon--circled" target="_blank" rel="noreferrer noopener">
+                                <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                                    <path d="m6.067 8 10.81 13.9L6 33.2h4.2l8.4-9.1 7.068 9.1H34L22.8 18.5 31.9 8h-3.5l-7.7 8.4L14.401 8H6.067Zm3.6 1.734h3.266l16.8 21.732H26.57L9.668 9.734Z">
+                                    </path>
+                                </svg>
+                                <span class="usa-sr-only">NLM on X (formerly known as Twitter)</span>
+                            </a>
+                        
+
+                        
+                            <a href="https://www.facebook.com/nationallibraryofmedicine" class="ncbi-footer__social-icon ncbi-footer__social-icon--circled" target="_blank" rel="noreferrer noopener">
+                                <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                                    <path d="M4.11371 23.1369C4.11371 23.082 4.11371 23.0294 4.11371 22.9745V12.9411H0.817305C0.6709 12.9411 0.670898 12.9411 0.670898 12.8016C0.670898 11.564 0.670898 10.3287 0.670898 9.09341C0.670898 8.97903 0.705213 8.95158 0.815017 8.95158C1.8673 8.95158 2.91959 8.95158 3.97417 8.95158H4.12057V8.83263C4.12057 7.8055 4.12057 6.7738 4.12057 5.74897C4.1264 4.92595 4.31387 4.11437 4.66959 3.37217C5.12916 2.38246 5.94651 1.60353 6.95717 1.1921C7.64827 0.905008 8.3913 0.764035 9.13953 0.778051C10.0019 0.791777 10.8644 0.830666 11.7268 0.860404C11.8869 0.860404 12.047 0.894717 12.2072 0.90158C12.2964 0.90158 12.3261 0.940469 12.3261 1.02968C12.3261 1.5421 12.3261 2.05452 12.3261 2.56465C12.3261 3.16857 12.3261 3.7725 12.3261 4.37642C12.3261 4.48165 12.2964 4.51367 12.1912 4.51138C11.5369 4.51138 10.8804 4.51138 10.2261 4.51138C9.92772 4.51814 9.63058 4.5526 9.33855 4.61433C9.08125 4.6617 8.84537 4.78881 8.66431 4.97766C8.48326 5.16652 8.3662 5.40755 8.32972 5.66661C8.28476 5.89271 8.26027 6.1224 8.25652 6.35289C8.25652 7.19014 8.25652 8.02969 8.25652 8.86923C8.25652 8.89439 8.25652 8.91955 8.25652 8.95615H12.0219C12.1797 8.95615 12.182 8.95616 12.1614 9.10714C12.0768 9.76596 11.9876 10.4248 11.9029 11.0813C11.8312 11.6319 11.7626 12.1824 11.697 12.733C11.6719 12.9434 11.6787 12.9434 11.4683 12.9434H8.26338V22.899C8.26338 22.979 8.26338 23.0591 8.26338 23.1392L4.11371 23.1369Z">
+                                    </path>
+                                </svg>
+                                <span class="usa-sr-only">NLM on Facebook</span>
+                            </a>
+                        
+
+                        
+                            <a href="https://www.youtube.com/user/NLMNIH" class="ncbi-footer__social-icon ncbi-footer__social-icon--circled" target="_blank" rel="noreferrer noopener">
+                                <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                                    <path d="M19.2561 1.47914C18.9016 1.15888 18.5699 0.957569 17.2271 0.834039C15.5503 0.678484 13.2787 0.655608 11.563 0.65332H9.43556C7.71987 0.65332 5.4483 0.678484 3.77151 0.834039C2.43098 0.957569 2.097 1.15888 1.74242 1.47914C0.813665 2.32097 0.619221 4.62685 0.598633 6.89384C0.598633 7.31781 0.598633 7.74101 0.598633 8.16345C0.626084 10.4121 0.827391 12.686 1.74242 13.521C2.097 13.8412 2.4287 14.0425 3.77151 14.1661C5.4483 14.3216 7.71987 14.3445 9.43556 14.3468H11.563C13.2787 14.3468 15.5503 14.3216 17.2271 14.1661C18.5676 14.0425 18.9016 13.8412 19.2561 13.521C20.1712 12.6929 20.3725 10.451 20.3999 8.22064C20.3999 7.74025 20.3999 7.25986 20.3999 6.77946C20.3725 4.54907 20.1689 2.30724 19.2561 1.47914ZM8.55942 10.5311V4.65201L13.5601 7.50005L8.55942 10.5311Z" fill="white"></path>
+                                </svg>
+                                <span class="usa-sr-only">NLM on YouTube</span>
+                            </a>
+                        
+                    </div>
+                </div>
+            
+
+            
+                <address class="ncbi-footer__address ncbi-footer__column">
+                    
+        <p>
+            <a class="usa-link usa-link--external" href="https://www.google.com/maps/place/8600+Rockville+Pike,+Bethesda,+MD+20894/%4038.9959508,
+            -77.101021,17z/data%3D!3m1!4b1!4m5!3m4!1s0x89b7c95e25765ddb%3A0x19156f88b27635b8!8m2!3d38.9959508!
+            4d-77.0988323" rel="noopener noreferrer" target="_blank">National Library of Medicine
+            <br> 8600 Rockville Pike<br> Bethesda, MD 20894</a>
+        </p>
+    
+                </address>
+            
+
+            
+                <ul class="usa-list usa-list--unstyled ncbi-footer__vertical-list ncbi-footer__column">
+                    
+                        <li class="ncbi-footer__vertical-list-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.nlm.nih.gov/web_policies.html" class="usa-link  usa-link--alt ncbi-footer__link">
+        
+
+        
+            Web Policies
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                        <li class="ncbi-footer__vertical-list-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.nih.gov/institutes-nih/nih-office-director/office-communications-public-liaison/freedom-information-act-office" class="usa-link  usa-link--alt ncbi-footer__link">
+        
+
+        
+            FOIA
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                        <li class="ncbi-footer__vertical-list-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.hhs.gov/vulnerability-disclosure-policy/index.html" class="usa-link usa-link--external usa-link--alt ncbi-footer__link" rel="noreferrer noopener" target="_blank">
+        
+
+        
+            HHS Vulnerability Disclosure
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <ul class="usa-list usa-list--unstyled ncbi-footer__vertical-list ncbi-footer__column">
+                    
+                        <li class="ncbi-footer__vertical-list-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://support.nlm.nih.gov/?pagename=cloudpmc-viewer%3Apmc%3Aarticle%3Ajournal" class="usa-link  usa-link--alt ncbi-footer__link" data-pinger-pagename-param="true">
+        
+
+        
+            Help
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                        <li class="ncbi-footer__vertical-list-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.nlm.nih.gov/accessibility.html" class="usa-link  usa-link--alt ncbi-footer__link">
+        
+
+        
+            Accessibility
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                        <li class="ncbi-footer__vertical-list-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.nlm.nih.gov/careers/careers.html" class="usa-link  usa-link--alt ncbi-footer__link">
+        
+
+        
+            Careers
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                </ul>
+            
+        </div>
+
+        
+            <div class="grid-row grid-col-12" data-testid="grid">
+                <ul class="ncbi-footer__bottom-links-list">
+                    
+                        <li class="ncbi-footer__bottom-list-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.nlm.nih.gov/" class="usa-link  usa-link--alt ncbi-footer__link">
+        
+
+        
+            NLM
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                        <li class="ncbi-footer__bottom-list-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.nih.gov/" class="usa-link  usa-link--alt ncbi-footer__link">
+        
+
+        
+            NIH
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                        <li class="ncbi-footer__bottom-list-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.hhs.gov/" class="usa-link usa-link--external usa-link--alt ncbi-footer__link" rel="noreferrer noopener" target="_blank">
+        
+
+        
+            HHS
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                        <li class="ncbi-footer__bottom-list-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.usa.gov/" class="usa-link usa-link--external usa-link--alt ncbi-footer__link" rel="noreferrer noopener" target="_blank">
+        
+
+        
+            USA.gov
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                </ul>
+            </div>
+        
+    </div>
+</footer>
+
+    
+
+
+        
+        
+    
+  <script type="text/javascript" src="https://cdn.ncbi.nlm.nih.gov/core/pinger/pinger.js"> </script><div id="ZN_dikYWqsjiUWN0Q5"></div><img alt="" src="https://pmc.ncbi.nlm.nih.gov/stat?HTTP_REFERER=&amp;SELF_URL=https%3A%2F%2Fpmc.ncbi.nlm.nih.gov%2Farticles%2FPMC3612296%2F&amp;browserheight=1620&amp;browserwidth=2880&amp;connection_effectivetype=4g&amp;connection_type=&amp;cookieSize=94&amp;cookieenabled=true&amp;is_browser_supported=true&amp;jsevent=render&amp;jsloadtime=&amp;jsperf_basePage=115&amp;jsperf_connect=293&amp;jsperf_dns=0&amp;jsperf_navTimingNetworkMS=528&amp;jsperf_navTimingRedirectCount=0&amp;jsperf_navTimingType=navigate&amp;jsperf_navType=0&amp;jsperf_redirectCount=0&amp;jsperf_ttfb=114&amp;jsrendertime=&amp;language_code=en-US&amp;myncbi_signed_in=false&amp;ncbi_algorithm=&amp;ncbi_app=cloudpmc-viewer&amp;ncbi_db=pmc&amp;ncbi_domain=ijcommed&amp;ncbi_featured_srcdb=&amp;ncbi_nwds=&amp;ncbi_pcid=journal&amp;ncbi_pdid=article&amp;ncbi_phid=DD9F434194D37BC30F4341007DBF01CB.m_1&amp;ncbi_program=&amp;ncbi_timesinceload=9&amp;ncbi_timesincenavstart=1233&amp;ncbi_type=fulltext&amp;pagename=cloudpmc-viewer%3Apmc%3Aarticle%3Ajournal&amp;pinger_in_iframe=false&amp;server=pmc.ncbi.nlm.nih.gov&amp;sgSource=native&amp;sgversion=0.42.0&amp;sgversion_hotfix=0&amp;sgversion_major=0&amp;sgversion_minor=42&amp;spa_index=0" style="display: none;">
+
+
+    
+        
+
+<button class="back-to-top" data-ga-category="pagination" data-ga-action="back_to_top">
+    <label>Back to Top</label>
+    <svg class="usa-icon order-0" aria-hidden="true" focusable="false" role="img">
+        <use xlink:href="/static/img/sprite.svg#arrow_upward"></use>
+    </svg>
+</button>
+    
+
+
+        
+    
+    
+    
+        
+    <script type="application/javascript">
+    window.ncbi = window.ncbi || {};
+    window.ncbi.pmc = window.ncbi.pmc || {};
+    window.ncbi.pmc.options = {
+        logLevel: 'INFO',
+        
+        staticEndpoint: '/static/',
+        
+        citeCookieName: 'pmc-cf',
+    };
+</script>
+    <script type="module" crossorigin="" src="/static/assets/base-B7-tgZZA.js"></script>
+    
+    <script type="text/javascript" src="https://cdn.ncbi.nlm.nih.gov/core/jquery/jquery-3.6.0.min.js">&#xA0;</script>
+    <script type="text/javascript">
+        jQuery.getScript("https://cdn.ncbi.nlm.nih.gov/core/alerts/alerts.js", function () {
+            galert(['div.nav_and_browser', 'div.header', '#universal_header', '.usa-banner', 'body > *:nth-child(1)'])
+        });
+    </script>
+
+
+    <script type="text/javascript">var exports = {};</script>
+     <script src="/static/CACHE/js/output.13b077bc3ffd.js"></script>
+
+    <script type="module" crossorigin="" src="/static/assets/article-BLbQGH8u.js"></script>
+    
+    
+
+    
+
+<div class="fake-body-scroll"></div><div class="fake-body-scroll"></div><img alt="" src="https://pmc.ncbi.nlm.nih.gov/stat?browserheight=1620&amp;browserwidth=2880&amp;connection_effectivetype=4g&amp;connection_type=&amp;cookieSize=192&amp;cookieenabled=true&amp;is_browser_supported=true&amp;jsevent=domready&amp;language_code=en-US&amp;myncbi_signed_in=false&amp;ncbi_algorithm=&amp;ncbi_app=cloudpmc-viewer&amp;ncbi_db=pmc&amp;ncbi_domain=ijcommed&amp;ncbi_featured_srcdb=&amp;ncbi_nwds=&amp;ncbi_pcid=journal&amp;ncbi_pdid=article&amp;ncbi_phid=DD9F434194D37BC30F4341007DBF01CB.m_1&amp;ncbi_program=&amp;ncbi_timesinceload=539&amp;ncbi_timesincenavstart=1762&amp;ncbi_type=fulltext&amp;pagename=cloudpmc-viewer%3Apmc%3Aarticle%3Ajournal&amp;pinger_in_iframe=false&amp;server=pmc.ncbi.nlm.nih.gov&amp;sgSource=native&amp;sgversion=0.42.0&amp;sgversion_hotfix=0&amp;sgversion_major=0&amp;sgversion_minor=42&amp;spa_index=0" style="display: none;"><script id="_fed_an_ua_tag" text="" charset="" type="text/javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=HHS&amp;subagency=NCBI%20-%20ncbi.nlm.nih.gov&amp;sitetopic=NCBI%20Pinger%200.39.3&amp;siteplatform=NCBI%20Pinger%200.39.3"></script><script type="text/javascript" src="https://zndikYWqsjiUWN0Q5-nlmenterprise.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_dikYWqsjiUWN0Q5"></script></body></html>
