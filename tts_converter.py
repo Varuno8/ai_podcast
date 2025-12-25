@@ -87,9 +87,26 @@ class TTSConverter:
         except Exception as e:
             print(f"  ⚠️ Cartesia cloning failed: {str(e)}. Using default voices.")
 
-    def _parse_script(self, script: str) -> list:
+    def _parse_script(self, script) -> list:
         segments = []
-        for line in script.strip().split('\n'):
+        
+        # Handle different script formats (list, dict, or str)
+        if isinstance(script, list):
+            lines = []
+            for item in script:
+                if isinstance(item, str):
+                    lines.append(item)
+                elif isinstance(item, dict):
+                    lines.append(item.get('text') or item.get('line') or str(item))
+                else:
+                    lines.append(str(item))
+        elif isinstance(script, dict):
+            # If the script is a dict, attempt to join values
+            lines = [str(v) for v in script.values()]
+        else:
+            lines = str(script).strip().split('\n')
+            
+        for line in lines:
             line = line.strip()
             if line.startswith("Host 1:"):
                 segments.append(("male", line.replace("Host 1:", "").strip()))

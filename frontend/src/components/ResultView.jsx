@@ -4,6 +4,7 @@ import { Download, Mic2, RefreshCcw, Volume2, Play, Plus, MessageSquare, Bot, Sh
 import { cn } from '../utils';
 import { useAudioAnalyzer } from '../hooks/useAudioAnalyzer';
 import { TalkingHead } from './TalkingHead';
+import { AudioWaveform } from './AudioWaveform';
 
 export function ResultView({
     currentResult,
@@ -39,7 +40,8 @@ export function ResultView({
     analytics
 }) {
     const [audioElement, setAudioElement] = React.useState(null);
-    const volume = useAudioAnalyzer(audioElement);
+    const audioData = useAudioAnalyzer(audioElement);
+    const { volume, rawData } = audioData;
 
     return (
         <motion.div
@@ -202,8 +204,10 @@ export function ResultView({
                         {/* Visual AI Stage */}
                         <div className="absolute inset-0 bg-grid-black/[0.05] -z-10" />
 
+                        <AudioWaveform volume={volume} isSpeaking={volume > 5} />
+
                         <TalkingHead
-                            image="/images/joe_rogan.jpeg"
+                            image="/images/host_male.png"
                             name="HOST 1"
                             isSpeaking={volume > 10}
                             volume={volume}
@@ -212,7 +216,7 @@ export function ResultView({
                         <div className="h-full w-[2px] bg-black/5" />
 
                         <TalkingHead
-                            image="/images/raj_shamani.jpeg"
+                            image="/images/host_female.png"
                             name="HOST 2"
                             isSpeaking={volume > 10}
                             volume={volume}
@@ -222,11 +226,12 @@ export function ResultView({
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.95 }}
                             onClick={() => {
-                                if (viewHistory && !viewHistory.audio_url) {
-                                    handleGenerateFromHistory();
-                                } else if (audioRef.current) {
+                                const hasAudio = currentResult?.audio_url || viewHistory?.audio_url;
+                                if (hasAudio && audioRef.current) {
                                     if (audioRef.current.paused) audioRef.current.play();
                                     else audioRef.current.pause();
+                                } else if (viewHistory && !viewHistory.audio_url) {
+                                    handleGenerateFromHistory();
                                 }
                             }}
                             className="absolute bottom-4 right-4 w-12 h-12 bg-black text-white rounded-full flex items-center justify-center shadow-2xl z-20 hover:bg-[#ff4d00] transition-colors"
@@ -243,6 +248,7 @@ export function ResultView({
                                 if (el !== audioElement) setAudioElement(el);
                             }}
                             controls
+                            crossOrigin="anonymous"
                             className="w-full h-10 border border-black/10"
                             src={API_BASE + (currentResult?.audio_url || viewHistory?.audio_url)}
                         />
@@ -252,7 +258,7 @@ export function ResultView({
                     {trailerUrl && (
                         <div className="bg-[#ff4d00]/5 p-4 border border-[#ff4d00]/20">
                             <p className="text-[9px] font-black uppercase tracking-widest text-[#ff4d00] mb-2">Teaser Trailer (60s)</p>
-                            <audio controls className="w-full h-8" src={API_BASE + trailerUrl} />
+                            <audio controls crossOrigin="anonymous" className="w-full h-8" src={API_BASE + trailerUrl} />
                         </div>
                     )}
 

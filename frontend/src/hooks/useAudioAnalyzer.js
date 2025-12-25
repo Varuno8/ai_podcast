@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 
 export function useAudioAnalyzer(audioElement) {
-    const [audioData, setAudioData] = useState(0);
+    const [audioData, setAudioData] = useState({ volume: 0, rawData: [] });
     const analyserRef = useRef(null);
     const audioContextRef = useRef(null);
     const sourceRef = useRef(null);
@@ -34,11 +34,19 @@ export function useAudioAnalyzer(audioElement) {
         const animate = () => {
             if (!analyserRef.current) return;
             const dataArray = new Uint8Array(analyserRef.current.frequencyBinCount);
-            analyserRef.current.getByteFrequencyData(dataArray);
+            analyserRef.current.getByteTimeDomainData(dataArray);
 
-            // Calculate average volume
-            const average = dataArray.reduce((p, c) => p + c, 0) / dataArray.length;
-            setAudioData(average);
+            // Calculate average volume for the talking heads
+            let sum = 0;
+            for (let i = 0; i < dataArray.length; i++) {
+                const val = (dataArray[i] - 128) / 128;
+                sum += val * val;
+            }
+            const rms = Math.sqrt(sum / dataArray.length);
+            setAudioData({
+                volume: rms * 255, // 0-255 scale
+                rawData: Array.from(dataArray)
+            });
 
             animationRef.current = requestAnimationFrame(animate);
         };

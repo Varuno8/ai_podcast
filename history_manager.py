@@ -22,9 +22,30 @@ class HistoryManager:
         script_path = self.history_dir / f"{entry_id}_script.txt"
         
         with open(content_path, "w") as f:
-            f.write(content)
+            f.write(str(content))
         with open(script_path, "w") as f:
-            f.write(script)
+            if isinstance(script, list):
+                # Handle list of strings or list of dicts
+                processed_lines = []
+                for item in script:
+                    if isinstance(item, str):
+                        processed_lines.append(item)
+                    elif isinstance(item, dict):
+                        # Try to find a 'text' or 'dialogue' key, otherwise stringify
+                        processed_lines.append(item.get('text') or item.get('line') or str(item))
+                    else:
+                        processed_lines.append(str(item))
+                f.write("\n".join(processed_lines))
+            elif isinstance(script, dict):
+                # If the whole script is a dict, it might be keyed by line number or speaker
+                # We'll try to join values if they look like strings
+                if all(isinstance(v, str) for v in script.values()):
+                    f.write("\n".join(script.values()))
+                else:
+                    import json
+                    f.write(json.dumps(script, indent=2))
+            else:
+                f.write(str(script))
             
         # Save metadata to DB
         import json

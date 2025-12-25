@@ -49,8 +49,11 @@ export default function App() {
 
   // Audio Recording State
   const [isRecording, setIsRecording] = useState(false);
+  const [recordingTarget, setRecordingTarget] = useState(null); // 'intro' or 'ad'
   const [mediaRecorder, setMediaRecorder] = useState(null);
   const [audioBlob, setAudioBlob] = useState(null);
+  const [adAudioBlob, setAdAudioBlob] = useState(null);
+  const [adPosition, setAdPosition] = useState(50); // 0-100 percentage
 
 
   // Dashboard State
@@ -62,6 +65,8 @@ export default function App() {
   const [comments, setComments] = useState([]);
   const [commentText, setCommentText] = useState('');
   const [activeTab, setActiveTab] = useState('radar'); // radar or circles
+  const [inputMode, setInputMode] = useState('url'); // url or script
+  const [manualScript, setManualScript] = useState('');
   const [activeSource, setActiveSource] = useState(null);
   const [resultTab, setResultTab] = useState('script'); // script or notes
   const [showNotes, setShowNotes] = useState('');
@@ -117,8 +122,9 @@ export default function App() {
     }
   };
 
-  const startRecording = async () => {
+  const startRecording = async (target = 'intro') => {
     try {
+      setRecordingTarget(target);
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       const recorder = new MediaRecorder(stream);
       const chunks = [];
@@ -126,8 +132,10 @@ export default function App() {
       recorder.ondataavailable = (e) => chunks.push(e.data);
       recorder.onstop = () => {
         const blob = new Blob(chunks, { type: 'audio/mp3' });
-        setAudioBlob(blob);
+        if (target === 'intro') setAudioBlob(blob);
+        else if (target === 'ad') setAdAudioBlob(blob);
         stream.getTracks().forEach(track => track.stop());
+        setRecordingTarget(null);
       };
 
       recorder.start();
@@ -198,7 +206,8 @@ export default function App() {
     setTrailerUrl(null);
 
     try {
-      let uploadedFilename = null;
+      let uploadedIntro = null;
+      let uploadedAd = null;
 
       // Upload Intro if exists
       if (audioBlob) {
@@ -208,17 +217,42 @@ export default function App() {
         const uploadRes = await axios.post(`${API_BASE}/api/upload/audio`, formData, {
           headers: { 'Content-Type': 'multipart/form-data' }
         });
-        uploadedFilename = uploadRes.data.filename;
+        uploadedIntro = uploadRes.data.filename;
+      }
+
+      // Upload Ad if exists
+      if (adAudioBlob) {
+        setStatus("UPLOADING AD...");
+        const formData = new FormData();
+        formData.append("file", adAudioBlob, "custom_ad.mp3");
+        const uploadRes = await axios.post(`${API_BASE}/api/upload/audio`, formData, {
+          headers: { 'Content-Type': 'multipart/form-data' }
+        });
+        uploadedAd = uploadRes.data.filename;
+      }
+
+      if (inputMode === 'url' && !url) {
+        setStatus("ERROR: NO URL");
+        setLoading(false);
+        return;
+      }
+      if (inputMode === 'script' && !manualScript) {
+        setStatus("ERROR: NO SCRIPT");
+        setLoading(false);
+        return;
       }
 
       setStatus("GENERATING...");
       const res = await axios.post(`${API_BASE}/api/generate`, {
-        url,
+        url: inputMode === 'url' ? url : null,
+        manual_script: inputMode === 'script' ? manualScript : null,
         persona,
         depth,
         insert_ad: insertAd,
+        ad_position: adPosition / 100,
+        ad_audio_file: uploadedAd,
         improv: improv,
-        user_intro_file: uploadedFilename,
+        user_intro_file: uploadedIntro,
         guest_url: guestUrl
       });
       setCurrentResult(res.data);
@@ -396,12 +430,17 @@ export default function App() {
         setDepth={setDepth}
         guestUrl={guestUrl}
         setGuestUrl={setGuestUrl}
+        adPosition={adPosition}
+        setAdPosition={setAdPosition}
+        adAudioBlob={adAudioBlob}
+        setAdAudioBlob={setAdAudioBlob}
+        audioBlob={audioBlob}
         insertAd={insertAd}
         setInsertAd={setInsertAd}
         improv={improv}
         setImprov={setImprov}
         isRecording={isRecording}
-        audioBlob={audioBlob}
+        recordingTarget={recordingTarget}
         startRecording={startRecording}
         stopRecording={stopRecording}
         history={history}
@@ -416,6 +455,10 @@ export default function App() {
         <Header
           url={url}
           setUrl={setUrl}
+          inputMode={inputMode}
+          setInputMode={setInputMode}
+          manualScript={manualScript}
+          setManualScript={setManualScript}
           loading={loading}
           handleGenerate={handleGenerate}
         />

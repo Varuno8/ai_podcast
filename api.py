@@ -2,6 +2,7 @@ import os
 import shutil
 import tempfile
 import traceback
+from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -69,13 +70,17 @@ app.mount("/history_files", StaticFiles(directory=str(history_dir)), name="histo
 app.mount("/ads", StaticFiles(directory=str(ads_dir)), name="ads")
 
 class GenerateRequest(BaseModel):
-    url: str
+    url: Optional[str] = None
+    manual_content: Optional[str] = None
+    manual_script: Optional[str] = None
     crawlbase_key: Optional[str] = None
     cerebras_key: Optional[str] = None
     cartesia_key: Optional[str] = None
     persona: Optional[str] = "investigator"
     depth: Optional[str] = "deep_dive"
     insert_ad: Optional[bool] = False
+    ad_position: Optional[float] = 0.5 # 0.0 to 1.0
+    ad_audio_file: Optional[str] = None
     improv: Optional[bool] = False
     user_intro_file: Optional[str] = None
     guest_url: Optional[str] = None
@@ -277,24 +282,49 @@ async def upload_audio(file: UploadFile = File(...)):
 
 @app.post("/api/generate")
 async def generate_podcast(req: GenerateRequest):
-    # Set keys in environment for the session
+    # Ensure keys are loaded
+    load_dotenv()
+    
+    # Set keys in environment for the session if provided (overrides .env)
     if req.crawlbase_key: os.environ['CRAWLBASE_API_KEY'] = req.crawlbase_key
     if req.cerebras_key: os.environ['CEREBRAS_API_KEY'] = req.cerebras_key
     if req.cartesia_key: os.environ['CARTESIA_API_KEY'] = req.cartesia_key
 
+    # Validate required keys
+    required_keys = ["CRAWLBASE_API_KEY", "CEREBRAS_API_KEY", "CARTESIA_API_KEY"]
+    missing = [k for k in required_keys if not os.environ.get(k)]
+    if missing:
+        raise HTTPException(status_code=500, detail=f"Server Configuration Error: Missing API Keys: {', '.join(missing)}. Please check your .env file.")
+
     try:
-        # Step 1: Scrape
-        scraper = WebScraper()
-        content = scraper.scrape(req.url)
+        # Step 1: Content Acquisition
+        content = req.manual_content
+        if not content and not req.manual_script:
+            if not req.url:
+                raise HTTPException(status_code=400, detail="URL is required if manual content/script is not provided.")
+            scraper = WebScraper()
+            content = scraper.scrape(req.url)
+        elif not content:
+            content = "Manual Script / Content Entry"
 
         # Step 1.5: Guest Persona
         guest_persona = None
         if req.guest_url:
             guest_persona = persona_engine.extract_persona(req.guest_url)
 
-        # Step 2: Script
-        generator = ScriptGenerator()
-        gen_response = generator.generate(content, persona=req.persona, depth=req.depth, improv=req.improv, guest_persona=guest_persona)
+        # Step 2: Scripting / Dialogue Generation
+        if req.manual_script:
+            script = req.manual_script
+            gen_response = {
+                "script": script,
+                "chapters": [{"title": "Introduction", "estimate_seconds": 10}, {"title": "Discussion", "estimate_seconds": 60}],
+                "show_notes": "A custom podcast generated from a manually provided script.",
+                "social_assets": {"linkedin": "Check out our newest episode!", "twitter": "New episode just dropped! 🎙️"},
+                "segments": [{"start_line_index": 0, "sentiment": "LOFI"}]
+            }
+        else:
+            generator = ScriptGenerator()
+            gen_response = generator.generate(content, persona=req.persona, depth=req.depth, improv=req.improv, guest_persona=guest_persona)
         
         script = gen_response['script']
         metadata = {
@@ -305,11 +335,12 @@ async def generate_podcast(req: GenerateRequest):
         }
         
         # Save to history (DB)
-        entry_id = history_mgr.save_generation(req.url, content, script, req.persona, req.depth, metadata=metadata)
+        display_url = req.url or "manual_entry"
+        entry_id = history_mgr.save_generation(display_url, content, script, req.persona, req.depth, metadata=metadata)
 
         # Step 3 & 4: Audio & Merge
         segments_metadata = gen_response.get('segments', [])
-        audio_url = await run_full_audio_flow(script, req.insert_ad, req.user_intro_file, segments_metadata)
+        audio_url = await run_full_audio_flow(script, req.insert_ad, req.user_intro_file, segments_metadata, req.ad_position, req.ad_audio_file)
         
         # Update DB with audio path
         history_mgr.update_audio_path(entry_id, audio_url.split('/')[-1])
@@ -344,7 +375,7 @@ async def generate_from_history(req: HistoryGenerateRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-async def run_full_audio_flow(script: str, insert_ad: bool = False, user_intro_file: str = None, segments_metadata: List[dict] = None):
+async def run_full_audio_flow(script, insert_ad=False, user_intro_file=None, segments_metadata=None, ad_position=0.5, ad_audio_file=None):
     converter = TTSConverter()
     segments = converter._parse_script(script)
     
@@ -398,27 +429,36 @@ async def run_full_audio_flow(script: str, insert_ad: bool = False, user_intro_f
 
     # Insert Ad Logic
     if insert_ad:
-        midpoint = len(speech_segments) // 2
-        ad_path = ads_dir / "default.mp3"
-        if not ad_path.exists():
+        # Calculate insert index based on ad_position (0.0 to 1.0)
+        # We ensure it's within bounds of the generated segments
+        insert_idx = int(len(speech_segments) * ad_position)
+        insert_idx = max(0, min(len(speech_segments), insert_idx))
+        
+        if ad_audio_file:
+            ad_path = images_dir.parent / "uploads" / ad_audio_file
+        else:
+            ad_path = ads_dir / "default.mp3"
+            
+        if not ad_path.exists() and not ad_audio_file:
              print("Generating default ad...")
              converter._generate_and_save_speech("Stay tuned! We'll be right back after this short break.", converter.voices["male"], str(ad_path))
         
         if ad_path.exists():
             try:
                 ad_audio = AudioSegment.from_mp3(ad_path)
-                speech_segments.insert(midpoint, ad_audio)
+                speech_segments.insert(insert_idx, ad_audio)
                 
                 # Shift vibe map keys
                 new_vibe_map = {}
                 for k, v in vibe_map.items():
-                    if k >= midpoint:
+                    if k >= insert_idx:
                         new_vibe_map[k + 1] = v
                     else:
                         new_vibe_map[k] = v
-                new_vibe_map[midpoint] = "CORPORATE"
+                new_vibe_map[insert_idx] = "CORPORATE"
                 vibe_map = new_vibe_map
             except Exception as e:
+                print(f"Ad audio error: {e}")
                 print(f"Failed to load ad: {e}")
 
     # Build BG Track Grouping
