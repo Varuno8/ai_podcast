@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"vite\" \"python3 ../api.py\"",
+    "dev": "concurrently \"vite\" \"cd .. && ./venv/bin/uvicorn api:app --reload\"",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

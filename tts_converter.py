@@ -1,35 +1,54 @@
 import os
 import requests
+import shutil
 from dotenv import load_dotenv
 from cartesia import Cartesia
+from pydub import AudioSegment
+import subprocess
 
 load_dotenv()
 
 
 class TTSConverter:
     def __init__(self):
-        self.api_key = os.getenv('CARTESIA_API_KEY')
-        self.client = None
-        if self.api_key:
-            self.client = Cartesia(api_key=self.api_key)
+        self.cartesia_key = os.getenv('CARTESIA_API_KEY')
+        self.elevenlabs_key = os.getenv('ELEVENLABS_API_KEY')
+        self.resemble_key = os.getenv('RESEMBLE_API_KEY')
+        self.resemble_project_id = "dd6cd421"
         
-        # Default voice embeddings or IDs (will be replaced by clones)
-        self.voices = {
-            "male": "228fca29-3a0a-435c-8728-5cb483251068", # Kiefer (Sonic 3)
-            "female": "f786b574-daa5-4673-aa0c-cbe3e8534c02", # Katie (Sonic 3)
-            "guest": "6926713b-d0c5-4a6d-867f-033857403eac"  # Baritono (Sonic 3) - using a distinct voice
+        # Cartesia Voice IDs
+        self.cartesia_voices = {
+            "male": "228fca29-3a0a-435c-8728-5cb483251068", # Kiefer
+            "female": "f786b574-daa5-4673-aa0c-cbe3e8534c02", # Katie
+            "guest": "6926713b-d0c5-4a6d-867f-033857403eac"  # Baritono
         }
+
+        # ElevenLabs Voice IDs
+        self.eleven_voices = {
+            "male": "pNInz6obpgDQGcFmaJgB", # Adam
+            "female": "EXAVITQu4vr4xnSDxMaL", # Sarah
+            "guest": "JBFqnCBsd6RMkjVDRZzb"  # George
+        }
+
+        # Resemble Voice IDs (Fallback Tier 3)
+        self.resemble_voices = {
+            "male": "e7e459d6",   # Ulrich
+            "female": "fb2d2858", # Lucy (en-US)
+            "guest": "a253156d"   # Jota
+        }
+
+        self.cartesia_client = None
+        if self.cartesia_key:
+            self.cartesia_client = Cartesia(api_key=self.cartesia_key)
+
+    @property
+    def voices(self):
+        return self.cartesia_voices
         
     def convert(self, script: str, output_dir: str = "audio_segments") -> list:
-        """Convert script to speech using Cartesia."""
-        if not self.api_key:
-            raise Exception("CARTESIA_API_KEY not found. Please add it to your .env file.")
-        
-        if not self.client:
-            self.client = Cartesia(api_key=self.api_key)
-
-        # 1. Setup/Clone voices from your files
-        self._setup_cartesia_voices()
+        """Convert script to speech with multiple fallbacks."""
+        if self.cartesia_client:
+            self._setup_cartesia_voices()
 
         segments = self._parse_script(script)
         os.makedirs(output_dir, exist_ok=True)
@@ -37,71 +56,46 @@ class TTSConverter:
         audio_files = []
         for i, (speaker, text) in enumerate(segments, 1):
             print(f"  Generating segment {i}/{len(segments)} ...")
-            voice_id = self.voices.get(speaker)
             audio_file = os.path.join(output_dir, f"segment_{i:03d}.mp3")
             
-            self._generate_and_save_speech(text, voice_id, audio_file)
+            self._generate_and_save_speech(text, speaker, audio_file)
             audio_files.append((speaker, audio_file))
             print(f"  ✓ Saved to {audio_file}")
         
         return audio_files
 
     def _setup_cartesia_voices(self):
-        """Clones voices using Cartesia if samples exist."""
+        """Attempts to clone voices in Cartesia if samples exist."""
         samples = {
             "male": "test_audio/1754476089398011524-298693777248327.mp3",
             "female": "test_audio/1754476231322799699-298694229168254.mp3"
         }
-        
         try:
-            # client.voices.list() returns a Pager object, iterate over it
-            voices_pager = self.client.voices.list()
-            existing_voices = []
-            for voice in voices_pager:
-                existing_voices.append(voice)
+            voices_pager = self.cartesia_client.voices.list()
+            existing_voices = [v for v in voices_pager]
             
             for speaker, sample_path in samples.items():
-                if not os.path.exists(sample_path):
-                    continue
-
+                if not os.path.exists(sample_path): continue
                 voice_name = f"Podcast {speaker.capitalize()} Clone"
+                found = next((v for v in existing_voices if v.get('name') == voice_name), None)
                 
-                # Check if already cloned
-                found_voice = next((v for v in existing_voices if v.get('name') == voice_name), None)
-                
-                if found_voice:
-                    self.voices[speaker] = found_voice['id']
-                    print(f"  ✓ Using existing Cartesia clone: {voice_name}")
+                if found:
+                    self.cartesia_voices[speaker] = found['id']
                 else:
-                    # Create new clone
-                    print(f"  + Cloning {speaker} voice with Cartesia...")
-                    with open(sample_path, 'rb') as f:
-                        new_voice = self.client.voices.clone(
-                            name=voice_name,
-                            filepath=sample_path,
-                            description=f"Cloned for podcast {speaker}"
-                        )
-                        self.voices[speaker] = new_voice['id']
-                        print(f"  ✨ Successfully cloned {speaker} in Cartesia!")
-
+                    new_voice = self.cartesia_client.voices.clone(
+                        name=voice_name,
+                        filepath=sample_path,
+                        description=f"Cloned for podcast {speaker}"
+                    )
+                    self.cartesia_voices[speaker] = new_voice['id']
         except Exception as e:
-            print(f"  ⚠️ Cartesia cloning failed: {str(e)}. Using default voices.")
+            print(f"  ⚠️ Cartesia setup failed: {e}. Using defaults.")
 
     def _parse_script(self, script) -> list:
         segments = []
-        
-        # Handle different script formats (list, dict, or str)
         if isinstance(script, list):
-            lines = []
-            for item in script:
-                if isinstance(item, str):
-                    lines.append(item)
-                elif isinstance(item, dict):
-                    lines.append(item.get('text') or item.get('line') or str(item))
-                else:
-                    lines.append(str(item))
+            lines = [str(item.get('text') if isinstance(item, dict) else item) for item in script]
         elif isinstance(script, dict):
-            # If the script is a dict, attempt to join values
             lines = [str(v) for v in script.values()]
         else:
             lines = str(script).strip().split('\n')
@@ -116,29 +110,170 @@ class TTSConverter:
                 segments.append(("guest", line.replace("Guest:", "").strip()))
         return segments
 
-    def _generate_and_save_speech(self, text: str, voice_id: str, output_file: str):
-        """Generate audio using Cartesia and save to file."""
-        try:
-            # Use the bytes endpoint for simple file generation
-            # Output format: mp3, 44100Hz
-            # tts.bytes returns a generator of bytes chunks
-            output = self.client.tts.bytes(
-                model_id="sonic-english",
-                transcript=text,
-                voice={
-                    "mode": "id",
-                    "id": voice_id
-                },
-                output_format={
-                    "container": "mp3",
-                    "encoding": "mp3",
-                    "sample_rate": 44100
+    def _generate_and_save_speech(self, text: str, speaker: str, output_file: str):
+        """Core generation logic with 5-tier automatic fallback."""
+        speaker = speaker.lower()
+        import re
+        # Clean emotional bracketed text
+        clean_text = re.sub(r'\[.*?\]', '', text).strip()
+        clean_text = re.sub(r'\*.*?\*', '', clean_text).strip()
+        if not clean_text: return 
+        
+        # Step 1: Try Cartesia
+        if self.cartesia_client and self.cartesia_key:
+            try:
+                voice_id = self.cartesia_voices.get(speaker, self.cartesia_voices["male"])
+                output = self.cartesia_client.tts.bytes(
+                    model_id="sonic-english",
+                    transcript=clean_text,
+                    voice={"mode": "id", "id": voice_id},
+                    output_format={"container": "mp3", "encoding": "mp3", "sample_rate": 44100}
+                )
+                with open(output_file, 'wb') as f:
+                    for chunk in output: f.write(chunk)
+                return 
+            except Exception as e:
+                print(f"  ⚠️ Cartesia failed for {speaker}: {e}. Falling back to ElevenLabs...")
+
+        # Step 2: Try ElevenLabs
+        if self.elevenlabs_key:
+            try:
+                voice_id = self.eleven_voices.get(speaker)
+                if not voice_id:
+                     voice_id = self.eleven_voices["male"]
+                
+                print(f"  -> ElevenLabs generating for {speaker} using voice {voice_id}")
+                
+                url = f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}"
+                headers = {
+                    "Accept": "audio/mpeg",
+                    "Content-Type": "application/json",
+                    "xi-api-key": self.elevenlabs_key
                 }
+                data = {
+                    "text": clean_text,
+                    "model_id": "eleven_multilingual_v2",
+                    "voice_settings": {"stability": 0.5, "similarity_boost": 0.5}
+                }
+                response = requests.post(url, json=data, headers=headers)
+                if response.status_code == 200:
+                    with open(output_file, 'wb') as f:
+                        f.write(response.content)
+                    print(f"  ✨ ElevenLabs saved audio for {speaker}")
+                    return 
+                else:
+                    print(f"  ⚠️ ElevenLabs API Error: {response.text}")
+            except Exception as e:
+                print(f"  ⚠️ ElevenLabs failed for {speaker}: {e}")
+
+        # Step 3: Try Resemble AI API
+        if self.resemble_key:
+            try:
+                voice_uuid = self.resemble_voices.get(speaker, self.resemble_voices["female"])
+                print(f"  -> Resemble AI generating for {speaker} using voice {voice_uuid}")
+                
+                url = f"https://app.resemble.ai/api/v2/projects/{self.resemble_project_id}/clips"
+                headers = {
+                    "Authorization": f"Token token={self.resemble_key}",
+                    "Content-Type": "application/json"
+                }
+                data = {
+                    "title": f"Podcast Segment {speaker}",
+                    "body": clean_text,
+                    "voice_uuid": voice_uuid,
+                    "is_public": False,
+                    "is_archived": False
+                }
+                
+                res = requests.post(url, json=data, headers=headers)
+                if res.status_code == 200:
+                    clip_data = res.json().get("item")
+                    audio_src = clip_data.get("audio_src")
+                    if audio_src:
+                        audio_res = requests.get(audio_src)
+                        with open(output_file, 'wb') as f:
+                            f.write(audio_res.content)
+                        print(f"  ✨ Resemble AI saved audio for {speaker}")
+                        return
+                else:
+                    print(f"  ⚠️ Resemble API Error: {res.text}")
+            except Exception as e:
+                print(f"  ⚠️ Resemble AI failed: {e}")
+
+        # Step 4: Try Resemble Chatterbox
+        try:
+            from gradio_client import Client, handle_file
+            print(f"  -> Resemble Chatterbox generating for {speaker} (final fallback)")
+            
+            sample_path = None
+            if speaker == "male":
+                sample_path = "test_audio/1754476089398011524-298693777248327.mp3"
+            elif speaker == "female":
+                sample_path = "test_audio/1754476231322799699-298694229168254.mp3"
+            
+            sample_arg = None
+            if sample_path and os.path.exists(sample_path):
+                 sample_arg = handle_file(os.path.abspath(sample_path))
+
+            client = Client("ResembleAI/Chatterbox")
+            result = client.predict(
+                text_input=clean_text[:300],  
+                audio_prompt_path_input=sample_arg,
+                exaggeration_input=0.5,
+                temperature_input=0.8,
+                seed_num_input=0,
+                cfgw_input=0.5,
+                vad_trim_input=False,
+                api_name="/generate_tts_audio"
             )
             
-            with open(output_file, 'wb') as f:
-                for chunk in output:
-                    f.write(chunk)
-                
+            if result and os.path.exists(result):
+                ffmpeg_path = shutil.which("ffmpeg") or "ffmpeg"
+                try:
+                    subprocess.run(
+                        [ffmpeg_path, "-y", "-i", result, "-f", "mp3", output_file],
+                        check=True,
+                        stderr=subprocess.PIPE,
+                        text=True
+                    )
+                    print(f"  ✨ Resemble Chatterbox saved audio (converted) for {speaker}")
+                    return
+                except subprocess.CalledProcessError as e:
+                    print(f"  ⚠️ FFmpeg failed: {e.stderr}")
+                    try:
+                        with open("last_ffmpeg_error.txt", "w") as log: log.write(e.stderr)
+                    except: pass
         except Exception as e:
-            raise Exception(f"Cartesia TTS Error: {str(e)}")
+            print(f"  ⚠️ Resemble Chatterbox failed: {e}")
+
+        # Step 5: Try Edge TTS (Free Neural - Ultimate Backup)
+        try:
+            import sys
+            print(f"  -> Edge TTS generating for {speaker} (ultimate backup)")
+            edge_voice = "en-US-GuyNeural" # Default Male
+            if speaker == "female":
+                edge_voice = "en-US-AriaNeural"
+            elif speaker == "guest":
+                edge_voice = "en-US-EricNeural"
+            
+            edge_bin = shutil.which("edge-tts")
+            if not edge_bin:
+                # Fallback to venv bin
+                edge_bin = os.path.join(os.path.dirname(sys.executable), "edge-tts")
+            
+            subprocess.run(
+                [edge_bin, "--text", clean_text, "--voice", edge_voice, "--write-media", output_file],
+                check=True,
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL
+            )
+            
+            if os.path.exists(output_file) and os.path.getsize(output_file) > 0:
+                print(f"  ✨ Edge TTS saved audio for {speaker}")
+                return
+        except Exception as e:
+            print(f"  ⚠️ Edge TTS failed: {e}")
+
+        # Step 6: If all 5 engines fail
+        if not os.path.exists(output_file) or os.path.getsize(output_file) == 0:
+            raise Exception(f"All 5 TTS Engines failed for speaker: {speaker}")

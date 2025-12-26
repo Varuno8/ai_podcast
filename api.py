@@ -231,15 +231,40 @@ async def interrogate_hosts(req: InterrogateRequest):
     Host 2: Well, {fact_check['explanation']}
     """
     
-    data = {
-        "model": "llama3.1-8b",
-        "messages": [{"role": "user", "content": prompt}]
-    }
-    
-    res = requests.post("https://api.cerebras.ai/v1/chat/completions", headers=headers, json=data)
+    # 2. Get LLM response for interrogation (Tiered: Gemini -> OpenRouter -> Cerebras)
     response_text = ""
-    if res.status_code == 200:
-        response_text = res.json()['choices'][0]['message']['content']
+    gemini_key = os.environ.get('GEMINI_API_KEY')
+    openrouter_key = os.environ.get('OPENROUTER_API_KEY')
+    
+    # Tier 1: Gemini 3 Flash
+    if gemini_key:
+        try:
+            url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key={gemini_key}"
+            res = requests.post(url, json={"contents": [{"parts": [{"text": prompt}]}]}, timeout=15)
+            if res.status_code == 200:
+                response_text = res.json()['candidates'][0]['content']['parts'][0]['text']
+        except Exception as e:
+            print(f"Gemini Interrogate Error: {e}")
+
+    # Tier 2: OpenRouter
+    if not response_text and openrouter_key:
+        try:
+            or_headers = {"Authorization": f"Bearer {openrouter_key}", "Content-Type": "application/json"}
+            or_data = {"model": "qwen/qwen3-4b:free", "messages": [{"role": "user", "content": prompt}]}
+            res = requests.post("https://openrouter.ai/api/v1/chat/completions", headers=or_headers, json=or_data, timeout=15)
+            if res.status_code == 200:
+                response_text = res.json()['choices'][0]['message']['content']
+        except Exception as e:
+            print(f"OpenRouter Interrogate Error: {e}")
+
+    # Tier 3: Cerebras Fallback
+    if not response_text:
+        try:
+            res = requests.post("https://api.cerebras.ai/v1/chat/completions", headers=headers, json=data, timeout=15)
+            if res.status_code == 200:
+                response_text = res.json()['choices'][0]['message']['content']
+        except Exception as e:
+            print(f"Cerebras Interrogate Error: {e}")
     
     # 3. TTS for response
     tts = TTSConverter()
@@ -267,7 +292,12 @@ async def regenerate_segment(req: SegmentRegenRequest):
     output_filename = f"regen_{tempfile.mktemp().split('/')[-1]}.mp3"
     output_path = regen_dir / output_filename
     
-    converter._generate_and_save_speech(req.text, converter.voices.get(req.voice, "male"), str(output_path))
+    curr_text = req.text
+    for prefix in ["Host 1:", "Host 2:", "Guest:"]:
+        if curr_text.startswith(prefix):
+            curr_text = curr_text.replace(prefix, "").strip()
+
+    converter._generate_and_save_speech(curr_text, req.voice, str(output_path))
     
     return {"audio_url": f"/history_files/regen/{output_filename}"}
 app.mount("/history_files/interrogate", StaticFiles(directory=str(history_dir / "interrogate")), name="interrogate")
@@ -401,9 +431,8 @@ async def run_full_audio_flow(script, insert_ad=False, user_intro_file=None, seg
         # segments_metadata uses 0-based index relative to the SCRIPT lines.
         # User intro adds an index 0 segment effectively? No, intro is separate.
         
-        voice = converter.voices.get(speaker, converter.voices["male"])
         audio_file = audio_dir_path / f"segment_{i:03d}.mp3"
-        converter._generate_and_save_speech(text, voice, str(audio_file))
+        converter._generate_and_save_speech(text, speaker, str(audio_file))
         
         if audio_file.exists() and audio_file.stat().st_size > 0:
             speech_segments.append(AudioSegment.from_mp3(audio_file))
@@ -441,7 +470,7 @@ async def run_full_audio_flow(script, insert_ad=False, user_intro_file=None, seg
             
         if not ad_path.exists() and not ad_audio_file:
              print("Generating default ad...")
-             converter._generate_and_save_speech("Stay tuned! We'll be right back after this short break.", converter.voices["male"], str(ad_path))
+             converter._generate_and_save_speech("Stay tuned! We'll be right back after this short break.", "male", str(ad_path))
         
         if ad_path.exists():
             try:

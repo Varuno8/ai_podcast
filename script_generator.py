@@ -1,46 +1,46 @@
 import os
 import requests
+import json
 from dotenv import load_dotenv
 
 load_dotenv()
 
-
 class ScriptGenerator:
     PERSONA_PROMPTS = {
         "investigator": """
-            Tone: Serious, skeptical, and analytical. 
-            Style: Host 1 plays "The Detective", constantly questioning sources and looking for hidden motives. Host 2 provides the facts but gets grilled. 
-            Focus: Uncover the "truth" behind the article. Use phrases like "But what aren't they telling us?" or "Follow the money."
+            Tone: Serious, investigative, and highly analytical. 
+            Host 1 Persona: "The Detective". Skeptical, focused on 'following the money', constantly questioning the validity of statements.
+            Host 2 Persona: "The Researcher". Provides the facts but is pushed to find deeper connections.
+            Dynamic: A high-stakes investigation. Use phrases like "Wait, let's look at the timeline," or "That sounds like a convenient narrative."
+            Vibe: 🕵️ True Crime / Investigative Journalism.
         """,
         "comedian": """
-            Tone: Witty, lighthearted, and punchy. 
-            Style: Host 1 is the Setup, Host 2 is the Punchline (or vice versa). Use roasting, modern slang, and pop culture references.
-            Focus: Make the content entertaining. If the article is dry, mock how dry it is. Use analogies like "That's like trying to download a car."
+            Tone: Sarcastic, high-energy, and irreverent. 
+            Host 1 Persona: "The Roaster". Uses heavy sarcasm, makes fun of the article's dry parts, and uses modern internet slang (e.g., 'sus', 'main character energy', 'L move').
+            Host 2 Persona: "The Hype Man". Laughs at the jokes, adds absurd analogies, and keep the energy levels at 100.
+            Dynamic: A late-night comedy set. Roast the topic. If it's serious, find the irony. Use ridiculous comparisons (e.g., "That's like bringing a spoon to a knife fight at a circus").
+            Vibe: 🎙️ Stand-up / Roast Room.
         """,
         "friend": """
-            Tone: Casual, empathetic, and slang-heavy.
-            Style: Two best friends chatting over coffee. Lots of "Dude," "No way," "That's crazy."
-            Focus: How this affects regular people. Emotional connection and relatability.
+            Tone: Warm, conversational, and relatable. 
+            Host 1 Persona: "The Enthusiast". Very "OMG did you see this?", uses lots of "Dude", "Honestly", and "That's wild".
+            Host 2 Persona: "The Confidant". Very supportive, shares personal-sounding "anecdotes", and focuses on the emotional side.
+            Dynamic: Two best friends catching up over coffee. Use "we all feel this" language. Focus on real-world impact for regular people.
+            Vibe: ☕ Casual Hangout / Life Chat.
         """
     }
 
     DEPTH_PROMPTS = {
-        "summary": "Length: Short and punchy (max 5-7 exchanges). Focus ONLY on the headline and key takeaway. finish in 2 minutes.",
-        "deep_dive": "Length: Detailed and comprehensive (15-20 exchanges). Explore nuances, background context, and implications. Take your time."
+        "summary": "Length: Short (max 6 exchanges). High-speed overview for busy people. Finish in under 2 minutes of audio.",
+        "deep_dive": "Length: Extensive (20+ exchanges). Deep philosophical exploration. Check every detail, discuss the future, and find obscure connections. This is a long-form podcast."
     }
 
     def __init__(self):
-        # self.api_key = os.getenv('CEREBRAS_API_KEY') # No longer needed as it's fetched directly in generate
-        # self.api_url = "https://api.cerebras.ai/v1/chat/completions" # No longer needed as it's hardcoded in generate
-        # self.model = "qwen-2.5-72b" # No longer needed as it's hardcoded in generate
-        pass
+        self.gemini_key = os.environ.get('GEMINI_API_KEY')
+        self.cerebras_key = os.environ.get('CEREBRAS_API_KEY')
+        self.openrouter_key = os.environ.get('OPENROUTER_API_KEY')
     
     def generate(self, content, persona="investigator", depth="deep_dive", improv=False, guest_persona=None):
-        headers = {
-            "Authorization": f"Bearer {os.environ.get('CEREBRAS_API_KEY')}",
-            "Content-Type": "application/json"
-        }
-
         persona_instruction = self.PERSONA_PROMPTS.get(persona, self.PERSONA_PROMPTS["investigator"])
         depth_instruction = self.DEPTH_PROMPTS.get(depth, self.DEPTH_PROMPTS["deep_dive"])
         
@@ -58,74 +58,77 @@ class ScriptGenerator:
             """
 
         prompt = f"""
-        You are a professional podcast script writer and content strategist. 
-        Convert the following article into a structured podcast package.
+        You are a world-class Podcast Script Writer. 
+        Your task is to transform the provided content into a viral podcast script.
 
-        PERSONA:
+        CRITICAL STYLE GUIDE (STRICT ADHERENCE REQUIRED):
         {persona_instruction}
         
         {guest_instruction}
         
-        DEPTH/LENGTH:
+        EPISODE STRUCTURE:
         {depth_instruction}
         
-        {f"IMPROV MODE ENABLED: Inject natural interruptions [Laughs], rhetorical questions, and human analogies." if improv else ""}
+        {f"IMPROV MODE ENABLED: YOU MUST inject natural human elements: [Laughs], [Sighs], interruptions, self-corrections, and 'Umm/Uh' fillers. Hosts should talk over each other slightly." if improv else ""}
 
         OUTPUT SPECIFICATION:
-        Return ONLY a JSON object with the following keys:
-        1. "script": The full dialogue in "Host 1: [text]" format.
-        2. "chapters": A list of {{"title": "Section Title", "estimate_seconds": N}} where N is the cumulative time.
-        3. "show_notes": A 100-word professional summary of the episode.
-        4. "social_assets": {{"linkedin": "long-form post", "twitter": "series of 3-5 punchy bullets"}}.
-        5. "segments": A list of {{"start_line_index": N, "sentiment": "LOFI" | "TENSE" | "EXCITED" | "CORPORATE"}}. N is the 0-based index of the dialogue line where this mood starts. Use "LOFI" for casual/intro, "TENSE" for serious/mystery, "EXCITED" for debates/reveal, "CORPORATE" for ads/tech specs. Ensure at least one segment starts at index 0.
+        Return ONLY a JSON object with:
+        1. "script": Full dialogue as one string. Use speaker names: "Host 1:", "Host 2:", and "Guest:" if applicable. Ensure the dialogue matches the PERSONA traits above perfectly.
+        2. "chapters": List of {{"title": "Section Name", "estimate_seconds": N}}.
+        3. "show_notes": Engaging 100-word summary.
+        4. "social_assets": {{"linkedin": "viral post", "twitter": "thread"}}.
+        5. "segments": List of {{"start_line_index": N, "sentiment": "LOFI"|"TENSE"|"EXCITED"|"CORPORATE"}}.
 
-        Rules:
-        - Format: JSON absolute. No markdown code blocks, just the raw json.
-        - Engaging and natural dialogue.
-        
-        Article:
-        {content[:4000]}...
+        Content:
+        {content[:4000]}
         """
 
-        data = {
-            "model": "llama3.1-8b",
-            "messages": [
-                {"role": "system", "content": "You are an expert podcast strategist that outputs ONLY raw JSON."},
-                {"role": "user", "content": prompt}
-            ],
-            "max_tokens": 8192,
-            "response_format": {"type": "json_object"}
-        }
+        # Tier 1: Gemini 3 Flash
+        if self.gemini_key:
+            try:
+                url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key={self.gemini_key}"
+                data = {
+                    "contents": [{"parts": [{"text": prompt}]}],
+                    "generationConfig": {"response_mime_type": "application/json"}
+                }
+                res = requests.post(url, json=data, timeout=30)
+                if res.status_code == 200:
+                    text = res.json()['candidates'][0]['content']['parts'][0]['text']
+                    return json.loads(text)
+            except Exception as e:
+                print(f"Gemini Generation Failed: {e}")
 
-        try:
-            response = requests.post("https://api.cerebras.ai/v1/chat/completions", headers=headers, json=data)
-            if response.status_code == 200:
-                import json
-                result = response.json()['choices'][0]['message']['content']
-                # Clean if model accidentally added markdown blocks
-                if "```json" in result:
-                    result = result.split("```json")[1].split("```")[0].strip()
-                return json.loads(result)
-            else:
-                raise Exception(f"Script Generation failed: {response.text}")
-        except Exception as e:
-            raise Exception(f"Script generation error: {str(e)}")
-    
-    def _create_prompt(self, content: str) -> str:
-        return f"""Convert the following content into an engaging podcast script between two hosts.
+        # Tier 2: OpenRouter (Wait, user said fallback to OpenRouter)
+        if self.openrouter_key:
+            try:
+                headers = {"Authorization": f"Bearer {self.openrouter_key}", "Content-Type": "application/json"}
+                data = {
+                    "model": "qwen/qwen3-4b:free",
+                    "messages": [{"role": "user", "content": prompt}]
+                }
+                res = requests.post("https://openrouter.ai/api/v1/chat/completions", headers=headers, json=data, timeout=30)
+                if res.status_code == 200:
+                    result = res.json()['choices'][0]['message']['content']
+                    if "```json" in result:
+                        result = result.split("```json")[1].split("```")[0].strip()
+                    return json.loads(result)
+            except Exception as e:
+                print(f"OpenRouter Fallback Failed: {e}")
 
-Format the script as a natural conversation with:
-- Host 1 (Male): A curious and enthusiastic interviewer
-- Host 2 (Female): A knowledgeable expert on the topic
-
-Requirements:
-- Break down complex topics into digestible segments
-- Use conversational language
-- Include natural transitions and reactions
-- Keep it engaging, informative and concise. 
-- Format each line as "Host 1:" or "Host 2:" followed by their dialogue
-
-Content to convert:
-{content}
-
-Generate the podcast script now:"""
+        # Tier 3: Cerebras Fallback
+        if self.cerebras_key:
+            try:
+                headers = {"Authorization": f"Bearer {self.cerebras_key}", "Content-Type": "application/json"}
+                data = {
+                    "model": "llama3.1-8b",
+                    "messages": [{"role": "user", "content": prompt}],
+                    "response_format": {"type": "json_object"}
+                }
+                res = requests.post("https://api.cerebras.ai/v1/chat/completions", headers=headers, json=data, timeout=30)
+                if res.status_code == 200:
+                    result = res.json()['choices'][0]['message']['content']
+                    return json.loads(result)
+            except Exception as e:
+                print(f"Cerebras Final Fallback Failed: {e}")
+        
+        raise Exception("All generation engines exhausted.")

@@ -1,0 +1,3 @@
+Host 1: Welcome to the show.
+Guest: Thanks for having me, George here.
+Host 2: Great to see you George.

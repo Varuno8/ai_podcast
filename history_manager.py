@@ -73,7 +73,7 @@ class HistoryManager:
         db = self._get_db()
         try:
             # Return list reversed (newest first)
-            episodes = db.query(Episode).order_by(Episode.timestamp.desc()).all()
+            episodes = db.query(Episode).order_by(Episode.id.desc()).all()
             return [
                 {
                     "id": str(ep.id),

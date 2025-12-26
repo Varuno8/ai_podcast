@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-dotenv
+requests
+sqlalchemy
+pydub
+cartesia
+gradio_client
+edge-tts
+Pillow
+feedparser
+streamlit
+python-multipart
