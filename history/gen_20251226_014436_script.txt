@@ -1,2 +1,0 @@
-Host 1: Hello and welcome.
-Host 2: Hi everyone, today we are testing the new infrastructure.

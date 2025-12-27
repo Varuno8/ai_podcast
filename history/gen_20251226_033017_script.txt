@@ -1,2 +1,0 @@
-Host 1: Testing Resemble fallback.
-Host 2: This should work perfectly.
