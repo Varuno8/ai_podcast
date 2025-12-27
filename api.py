@@ -2,6 +2,7 @@ import os
 import shutil
 import tempfile
 import traceback
+import requests
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
@@ -54,6 +55,7 @@ app.add_middleware(
 BASE_DIR = Path(__file__).resolve().parent
 images_dir = BASE_DIR / "images"
 history_dir = BASE_DIR / "history"
+uploads_dir = BASE_DIR / "uploads"
 
 if not images_dir.exists():
     images_dir.mkdir(exist_ok=True)
@@ -61,12 +63,16 @@ if not images_dir.exists():
 if not history_dir.exists():
     history_dir.mkdir(exist_ok=True)
 
+if not uploads_dir.exists():
+    uploads_dir.mkdir(exist_ok=True)
+
 ads_dir = BASE_DIR / "ads"
 if not ads_dir.exists():
     ads_dir.mkdir(exist_ok=True)
 
 app.mount("/images", StaticFiles(directory=str(images_dir)), name="images")
 app.mount("/history_files", StaticFiles(directory=str(history_dir)), name="history_files")
+app.mount("/uploads", StaticFiles(directory=str(uploads_dir)), name="uploads")
 app.mount("/ads", StaticFiles(directory=str(ads_dir)), name="ads")
 
 class GenerateRequest(BaseModel):
@@ -260,24 +266,62 @@ async def interrogate_hosts(req: InterrogateRequest):
     # Tier 3: Cerebras Fallback
     if not response_text:
         try:
-            res = requests.post("https://api.cerebras.ai/v1/chat/completions", headers=headers, json=data, timeout=15)
+            cerebras_data = {
+                "model": "llama3.1-8b",
+                "messages": [{"role": "user", "content": prompt}],
+                "stream": False
+            }
+            res = requests.post("https://api.cerebras.ai/v1/chat/completions", headers=headers, json=cerebras_data, timeout=15)
             if res.status_code == 200:
                 response_text = res.json()['choices'][0]['message']['content']
         except Exception as e:
             print(f"Cerebras Interrogate Error: {e}")
     
-    # 3. TTS for response
-    tts = TTSConverter()
-    audio_files = tts.convert(response_text, output_dir=str(history_dir / "interrogate"))
+    # If no response generated, use fallback
+    if not response_text:
+        response_text = "Host 1: That's an interesting question!\nHost 2: Unfortunately, we're having some technical difficulties accessing that information right now."
     
-    # Combine audio (simplified: just return the first segment URL for now or list)
-    # In a full impl, we'd stitch them, but one URL for the whole response is better.
-    # For now, let's just use the first output file for simplicity or return both.
+    # 3. Ensure interrogate directory exists
+    interrogate_dir = history_dir / "interrogate"
+    interrogate_dir.mkdir(exist_ok=True)
+    
+    # 4. TTS for response - Parse and generate audio
+    tts = TTSConverter()
+    segments = tts._parse_script(response_text)
+    
+    audio_segments = []
+    for i, (speaker, text) in enumerate(segments):
+        audio_file = interrogate_dir / f"interrogate_{tempfile.mktemp().split('/')[-1]}_{i}.mp3"
+        tts._generate_and_save_speech(text, speaker, str(audio_file))
+        
+        if audio_file.exists() and audio_file.stat().st_size > 0:
+            audio_segments.append(audio_file)
+    
+    # Merge all segments if multiple
+    if len(audio_segments) > 1:
+        from pydub import AudioSegment as AS
+        combined = AS.empty()
+        for seg_path in audio_segments:
+            combined += AS.from_mp3(seg_path)
+        
+        final_path = interrogate_dir / f"response_{tempfile.mktemp().split('/')[-1]}.mp3"
+        combined.export(final_path, format="mp3")
+        
+        # Clean up individual segments
+        for seg_path in audio_segments:
+            try: os.remove(seg_path)
+            except: pass
+            
+        audio_url = f"/history_files/interrogate/{final_path.name}"
+    elif len(audio_segments) == 1:
+        audio_url = f"/history_files/interrogate/{audio_segments[0].name}"
+    else:
+        audio_url = None
     
     return {
         "response_text": response_text,
         "fact_check": fact_check,
-        "audio_url": f"/history_files/interrogate/{os.path.basename(audio_files[0][1])}" if audio_files else None
+        "audio_url": audio_url
     }
 
 @app.post("/api/regenerate-segment")

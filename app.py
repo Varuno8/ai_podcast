@@ -161,6 +161,7 @@ if generate_btn or "use_script_from_history" in st.session_state:
     is_history_mode = "use_script_from_history" in st.session_state
     current_script = st.session_state.get("use_script_from_history")
     current_url = url if not is_history_mode else st.session_state.get("use_url_from_history")
+    current_episode_id = None  # Track episode ID for updating audio later
 
     progress_container = st.container()
     
@@ -181,10 +182,19 @@ if generate_btn or "use_script_from_history" in st.session_state:
             with st.status("✍️ Generating podcast script...", expanded=True) as status:
                 try:
                     generator = ScriptGenerator()
-                    script = generator.generate(content)
-                    # Save to history
-                    history_mgr.save_generation(url, content, script)
-                    st.success("✅ Podcast script generated and saved to history")
+                    result = generator.generate(content)
+                    
+                    # Extract script from result
+                    if isinstance(result, dict) and 'script' in result:
+                        script = result['script']
+                        metadata = result
+                    else:
+                        script = result
+                        metadata = None
+                    
+                    # Save to history and capture episode ID
+                    current_episode_id = history_mgr.save_generation(url, content, script, metadata=metadata)
+                    st.success(f"✅ Podcast script generated and saved to history (Episode #{current_episode_id})")
                     status.update(label="✅ Script generated successfully!", state="complete")
                     current_script = script
                 except Exception as e:
@@ -193,6 +203,8 @@ if generate_btn or "use_script_from_history" in st.session_state:
         else:
             st.info(f"📜 Using existing script from history for: {current_url}")
             script = current_script
+            # Get episode ID from history if regenerating
+            current_episode_id = st.session_state.get("history_episode_id")
 
         # Step 3: Audio Generation
         with st.status("🎙️ Converting script to audio...", expanded=True) as status:
@@ -208,16 +220,20 @@ if generate_btn or "use_script_from_history" in st.session_state:
                 progress_bar = st.progress(0)
                 progress_text = st.empty()
                 
-                # Create persistent audio directory
-                audio_dir = tempfile.mkdtemp()
+                # Create PERMANENT audio directory in history folder
+                from pathlib import Path
+                import datetime
+                timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+                audio_dir = Path(__file__).resolve().parent / "history" / f"audio_{timestamp}"
+                audio_dir.mkdir(exist_ok=True)
                 audio_files = []
                 
                 for i, (speaker, text) in enumerate(segments, 1):
                     progress_text.text(f"Processing segment {i}/{total_segments} ...")
                     voice = converter.voices.get(speaker, converter.voices["male"])
-                    audio_file = os.path.join(audio_dir, f"segment_{i:03d}.mp3")
+                    audio_file = str(audio_dir / f"segment_{i:03d}.mp3")
                     
-                    converter._generate_and_save_speech(text, voice, audio_file)
+                    converter._generate_and_save_speech(text, speaker, audio_file)
                     
                     # Verify file exists before adding to list
                     if os.path.exists(audio_file) and os.path.getsize(audio_file) > 0:
@@ -295,6 +311,16 @@ if generate_btn or "use_script_from_history" in st.session_state:
                 st.success(f"✅ Podcast merged successfully ({os.path.getsize(output_path)} bytes)")
                 if corrupted_segments:
                     st.info(f"ℹ️ Note: {len(corrupted_segments)} segments were skipped due to corruption")
+                
+                # Save audio to history if we have an episode ID
+                if current_episode_id:
+                    import os.path
+                    audio_filename = os.path.basename(output_path)
+                    # Get the relative path from history directory
+                    audio_relative_path = f"audio_{timestamp}/{audio_filename}"
+                    history_mgr.update_audio_path(current_episode_id, audio_relative_path)
+                    st.success(f"💾 Audio saved to history (Episode #{current_episode_id})")
+                
                 status.update(label="✅ Podcast ready!", state="complete")
                 
                 # Update audio_files to only include valid ones
@@ -342,6 +368,8 @@ if generate_btn or "use_script_from_history" in st.session_state:
             # Clean up session state after generation
             del st.session_state.use_script_from_history
             del st.session_state.use_url_from_history
+            if "history_episode_id" in st.session_state:
+                del st.session_state.history_episode_id
             if "view_history_id" in st.session_state:
                 del st.session_state.view_history_id
 
@@ -360,6 +388,7 @@ if "view_history_id" in st.session_state:
             if st.button("🎙️ Generate Audio from this Script", use_container_width=True):
                 st.session_state.use_script_from_history = detail['script']
                 st.session_state.use_url_from_history = detail['url']
+                st.session_state.history_episode_id = detail['id']  # Save episode ID for updating audio
                 st.rerun()
         with tab_h2:
             st.text_area("Scraped Raw Content", detail['content'], height=400)

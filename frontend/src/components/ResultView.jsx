@@ -300,7 +300,9 @@ export function ResultView({
                                     <div key={c.id} className="bg-[#f4f1ea] p-3 text-xs">
                                         <div className="flex justify-between mb-1">
                                             <span className="font-bold text-[#ff4d00]">{c.user}</span>
-                                            <span className="font-mono text-black/40">{new Date(c.timestamp_seconds * 1000).toISOString().substr(14, 5)}</span>
+                                            <span className="font-mono text-black/40">
+                                                {c.timestamp_seconds ? new Date(c.timestamp_seconds * 1000).toISOString().substr(14, 5) : '00:00'}
+                                            </span>
                                         </div>
                                         <p>{c.text}</p>
                                     </div>

@@ -110,23 +110,88 @@ class TTSConverter:
                 segments.append(("guest", line.replace("Guest:", "").strip()))
         return segments
 
+    def _extract_emotion_context(self, text: str) -> dict:
+        """Extract emotional cues from text and map to Cartesia controls."""
+        import re
+        
+        # Default emotional state
+        emotion_controls = {
+            "speed": "normal",
+            "emotion": []
+        }
+        
+        text_lower = text.lower()
+        
+        # Detect laughter/joy
+        if re.search(r'\[laugh', text_lower) or re.search(r'\[chuckle', text_lower):
+            emotion_controls["emotion"].append("positivity:high")
+            
+        # Detect excitement/energy
+        if re.search(r'\[excit', text_lower) or re.search(r'\[energet', text_lower):
+            emotion_controls["emotion"].append("curiosity:high")
+            emotion_controls["speed"] = "fast"
+            
+        # Detect sadness/sorrow
+        if re.search(r'\[sad', text_lower) or re.search(r'\[sorrow', text_lower) or re.search(r'\[sigh', text_lower):
+            emotion_controls["emotion"].append("sadness:high")
+            emotion_controls["speed"] = "slow"
+            
+        # Detect anger/frustration
+        if re.search(r'\[angr', text_lower) or re.search(r'\[frustrat', text_lower):
+            emotion_controls["emotion"].append("anger:high")
+            
+        # Detect calmness
+        if re.search(r'\[calm', text_lower) or re.search(r'\[whisper', text_lower):
+            emotion_controls["emotion"].append("positivity:low")
+            emotion_controls["speed"] = "slow"
+            
+        # Detect nervousness/fear
+        if re.search(r'\[nervous', text_lower) or re.search(r'\[scar', text_lower):
+            emotion_controls["emotion"].append("anger:lowest")
+            emotion_controls["speed"] = "fast"
+        
+        # If no specific emotion detected, use neutral positive
+        if not emotion_controls["emotion"]:
+            emotion_controls["emotion"] = ["positivity:medium", "curiosity:medium"]
+        
+        return emotion_controls
+
+
     def _generate_and_save_speech(self, text: str, speaker: str, output_file: str):
         """Core generation logic with 5-tier automatic fallback."""
         speaker = speaker.lower()
         import re
-        # Clean emotional bracketed text
+        
+        # Extract emotional context for Cartesia emotional controls
+        emotion_context = self._extract_emotion_context(text)
+        
+        # For Cartesia: KEEP emotional tags - it supports them natively!
+        # Only clean for non-Cartesia fallbacks
+        cartesia_text = re.sub(r'\*.*?\*', '', text).strip()  # Remove markdown only
+        
+        # For other services: clean all emotional markers
         clean_text = re.sub(r'\[.*?\]', '', text).strip()
         clean_text = re.sub(r'\*.*?\*', '', clean_text).strip()
         if not clean_text: return 
         
-        # Step 1: Try Cartesia
+        # Step 1: Try Cartesia with EMOTIONAL CONTROLS
         if self.cartesia_client and self.cartesia_key:
             try:
                 voice_id = self.cartesia_voices.get(speaker, self.cartesia_voices["male"])
+                
+                # Build voice config with emotional controls
+                voice_config = {
+                    "mode": "id",
+                    "id": voice_id,
+                    "__experimental_controls": emotion_context
+                }
+                
+                print(f"  🎭 Cartesia generating with emotions: {emotion_context}")
+                
                 output = self.cartesia_client.tts.bytes(
                     model_id="sonic-english",
-                    transcript=clean_text,
-                    voice={"mode": "id", "id": voice_id},
+                    transcript=cartesia_text,  # Keep emotion tags!
+                    voice=voice_config,
                     output_format={"container": "mp3", "encoding": "mp3", "sample_rate": 44100}
                 )
                 with open(output_file, 'wb') as f:
@@ -135,14 +200,18 @@ class TTSConverter:
             except Exception as e:
                 print(f"  ⚠️ Cartesia failed for {speaker}: {e}. Falling back to ElevenLabs...")
 
-        # Step 2: Try ElevenLabs
+        # Step 2: Try ElevenLabs v3 (supports emotion tags!)
         if self.elevenlabs_key:
             try:
                 voice_id = self.eleven_voices.get(speaker)
                 if not voice_id:
                      voice_id = self.eleven_voices["male"]
                 
-                print(f"  -> ElevenLabs generating for {speaker} using voice {voice_id}")
+                print(f"  -🎭 ElevenLabs v3 generating with emotions for {speaker} using voice {voice_id}")
+                
+                # ElevenLabs v3 supports emotion tags like [laughs], [whispers], [angry], etc.
+                # Keep the emotional tags in the text!
+                elevenlabs_text = re.sub(r'\*.*?\*', '', text).strip()  # Remove markdown only
                 
                 url = f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}"
                 headers = {
@@ -151,20 +220,26 @@ class TTSConverter:
                     "xi-api-key": self.elevenlabs_key
                 }
                 data = {
-                    "text": clean_text,
-                    "model_id": "eleven_multilingual_v2",
-                    "voice_settings": {"stability": 0.5, "similarity_boost": 0.5}
+                    "text": elevenlabs_text,  # Keep emotion tags!
+                    "model_id": "eleven_turbo_v2_5",  # v3 model with emotion support
+                    "voice_settings": {
+                        "stability": 0.5, 
+                        "similarity_boost": 0.75,
+                        "style": 0.5,  # Enable expressive delivery
+                        "use_speaker_boost": True
+                    }
                 }
                 response = requests.post(url, json=data, headers=headers)
                 if response.status_code == 200:
                     with open(output_file, 'wb') as f:
                         f.write(response.content)
-                    print(f"  ✨ ElevenLabs saved audio for {speaker}")
+                    print(f"  ✨ ElevenLabs saved emotional audio for {speaker}")
                     return 
                 else:
                     print(f"  ⚠️ ElevenLabs API Error: {response.text}")
             except Exception as e:
                 print(f"  ⚠️ ElevenLabs failed for {speaker}: {e}")
+
 
         # Step 3: Try Resemble AI API
         if self.resemble_key:
